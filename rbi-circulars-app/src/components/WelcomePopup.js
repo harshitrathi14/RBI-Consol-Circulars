@@ -1,85 +1,36 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
     Modal,
     View,
     Text,
     TouchableOpacity,
     StyleSheet,
-    Animated,
     Dimensions,
+    ScrollView,
 } from 'react-native';
 import { COLORS, SIZES, SHADOWS } from '../constants/theme';
 
-const { width } = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const WelcomePopup = ({ onClose }) => {
-    const [visible, setVisible] = useState(false);
-    const scaleAnim = new Animated.Value(0.8);
-    const opacityAnim = new Animated.Value(0);
+    const [visible, setVisible] = useState(true);
 
-    useEffect(() => {
-        checkFirstLaunch();
-    }, []);
-
-    const checkFirstLaunch = async () => {
-        try {
-            // Show popup every time app opens (remove stored value check for always showing)
-            setVisible(true);
-            Animated.parallel([
-                Animated.spring(scaleAnim, {
-                    toValue: 1,
-                    friction: 8,
-                    tension: 40,
-                    useNativeDriver: true,
-                }),
-                Animated.timing(opacityAnim, {
-                    toValue: 1,
-                    duration: 300,
-                    useNativeDriver: true,
-                }),
-            ]).start();
-        } catch (error) {
-            console.log('Error checking first launch:', error);
-        }
-    };
-
-    const handleClose = async () => {
-        Animated.parallel([
-            Animated.timing(scaleAnim, {
-                toValue: 0.8,
-                duration: 200,
-                useNativeDriver: true,
-            }),
-            Animated.timing(opacityAnim, {
-                toValue: 0,
-                duration: 200,
-                useNativeDriver: true,
-            }),
-        ]).start(() => {
-            setVisible(false);
-            if (onClose) onClose();
-        });
+    const handleClose = () => {
+        setVisible(false);
+        if (onClose) onClose();
     };
 
     if (!visible) return null;
 
     return (
         <Modal
-            transparent
+            transparent={true}
             visible={visible}
-            animationType="none"
-            statusBarTranslucent
+            animationType="fade"
+            onRequestClose={handleClose}
         >
             <View style={styles.overlay}>
-                <Animated.View
-                    style={[
-                        styles.popup,
-                        {
-                            transform: [{ scale: scaleAnim }],
-                            opacity: opacityAnim,
-                        },
-                    ]}
-                >
+                <View style={styles.popup}>
                     {/* Header with Logo */}
                     <View style={styles.header}>
                         <View style={styles.logoContainer}>
@@ -94,41 +45,43 @@ const WelcomePopup = ({ onClose }) => {
                     <View style={styles.divider} />
 
                     {/* About Section */}
-                    <View style={styles.aboutSection}>
-                        <Text style={styles.aboutTitle}>About This App</Text>
-                        <Text style={styles.aboutText}>
-                            Your comprehensive guide to RBI Master Circulars for NBFCs. This app provides:
-                        </Text>
+                    <ScrollView style={styles.scrollContent} showsVerticalScrollIndicator={false}>
+                        <View style={styles.aboutSection}>
+                            <Text style={styles.aboutTitle}>About This App</Text>
+                            <Text style={styles.aboutText}>
+                                Your comprehensive guide to RBI Master Circulars for NBFCs. This app provides:
+                            </Text>
 
-                        <View style={styles.featureList}>
-                            <View style={styles.featureItem}>
-                                <Text style={styles.featureIcon}>📚</Text>
-                                <Text style={styles.featureText}>Complete regulatory library with categorized sections</Text>
-                            </View>
-                            <View style={styles.featureItem}>
-                                <Text style={styles.featureIcon}>🔍</Text>
-                                <Text style={styles.featureText}>Smart search across all circulars and regulations</Text>
-                            </View>
-                            <View style={styles.featureItem}>
-                                <Text style={styles.featureIcon}>📊</Text>
-                                <Text style={styles.featureText}>Key thresholds, RCSA, and compliance actions</Text>
-                            </View>
-                            <View style={styles.featureItem}>
-                                <Text style={styles.featureIcon}>📄</Text>
-                                <Text style={styles.featureText}>Original PDF circulars with easy sharing</Text>
-                            </View>
-                            <View style={styles.featureItem}>
-                                <Text style={styles.featureIcon}>📥</Text>
-                                <Text style={styles.featureText}>Extract & download key compliance data</Text>
+                            <View style={styles.featureList}>
+                                <View style={styles.featureItem}>
+                                    <Text style={styles.featureIcon}>📚</Text>
+                                    <Text style={styles.featureText}>Complete regulatory library with categorized sections</Text>
+                                </View>
+                                <View style={styles.featureItem}>
+                                    <Text style={styles.featureIcon}>🔍</Text>
+                                    <Text style={styles.featureText}>Smart search across all circulars and regulations</Text>
+                                </View>
+                                <View style={styles.featureItem}>
+                                    <Text style={styles.featureIcon}>📊</Text>
+                                    <Text style={styles.featureText}>Key thresholds, RCSA, and compliance actions</Text>
+                                </View>
+                                <View style={styles.featureItem}>
+                                    <Text style={styles.featureIcon}>📄</Text>
+                                    <Text style={styles.featureText}>Original PDF circulars with easy sharing</Text>
+                                </View>
+                                <View style={styles.featureItem}>
+                                    <Text style={styles.featureIcon}>📥</Text>
+                                    <Text style={styles.featureText}>Extract & download key compliance data</Text>
+                                </View>
                             </View>
                         </View>
-                    </View>
 
-                    {/* Version & Footer */}
-                    <View style={styles.footer}>
-                        <Text style={styles.versionText}>Version 1.0.0</Text>
-                        <Text style={styles.copyrightText}>Powered by AI Technology</Text>
-                    </View>
+                        {/* Version & Footer */}
+                        <View style={styles.footer}>
+                            <Text style={styles.versionText}>Version 1.0.0</Text>
+                            <Text style={styles.copyrightText}>Powered by AI Technology</Text>
+                        </View>
+                    </ScrollView>
 
                     {/* Get Started Button */}
                     <TouchableOpacity
@@ -138,7 +91,7 @@ const WelcomePopup = ({ onClose }) => {
                     >
                         <Text style={styles.buttonText}>Get Started</Text>
                     </TouchableOpacity>
-                </Animated.View>
+                </View>
             </View>
         </Modal>
     );
@@ -147,23 +100,28 @@ const WelcomePopup = ({ onClose }) => {
 const styles = StyleSheet.create({
     overlay: {
         flex: 1,
-        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: SIZES.spacing.lg,
+        padding: 24,
     },
     popup: {
         backgroundColor: COLORS.surface,
-        borderRadius: SIZES.radius.xl,
+        borderRadius: 20,
         width: width - 48,
         maxWidth: 380,
+        maxHeight: height * 0.8,
         overflow: 'hidden',
-        ...SHADOWS.large,
+        elevation: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 8,
     },
     header: {
         backgroundColor: COLORS.primary,
-        paddingVertical: SIZES.spacing.xl,
-        paddingHorizontal: SIZES.spacing.lg,
+        paddingVertical: 24,
+        paddingHorizontal: 20,
         alignItems: 'center',
     },
     logoContainer: {
@@ -173,28 +131,28 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255, 255, 255, 0.2)',
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: SIZES.spacing.md,
+        marginBottom: 12,
     },
     logoIcon: {
         fontSize: 36,
     },
     appName: {
-        fontSize: SIZES.xl,
+        fontSize: 20,
         fontWeight: '700',
-        color: COLORS.textOnPrimary,
+        color: '#FFFFFF',
         textAlign: 'center',
         marginBottom: 2,
     },
     appSubtitle: {
-        fontSize: SIZES.lg,
+        fontSize: 18,
         fontWeight: '600',
-        color: COLORS.accentLight,
+        color: '#FCD34D',
         textAlign: 'center',
-        marginBottom: SIZES.spacing.xs,
+        marginBottom: 4,
     },
     brandingText: {
-        fontSize: SIZES.md,
-        color: COLORS.accentLight,
+        fontSize: 14,
+        color: '#FCD34D',
         fontWeight: '600',
         textAlign: 'center',
     },
@@ -202,66 +160,69 @@ const styles = StyleSheet.create({
         height: 4,
         backgroundColor: COLORS.accent,
     },
+    scrollContent: {
+        maxHeight: height * 0.4,
+    },
     aboutSection: {
-        padding: SIZES.spacing.lg,
+        padding: 20,
     },
     aboutTitle: {
-        fontSize: SIZES.lg,
+        fontSize: 18,
         fontWeight: '700',
         color: COLORS.text,
-        marginBottom: SIZES.spacing.sm,
+        marginBottom: 8,
     },
     aboutText: {
-        fontSize: SIZES.md,
+        fontSize: 14,
         color: COLORS.textSecondary,
         lineHeight: 22,
-        marginBottom: SIZES.spacing.base,
+        marginBottom: 16,
     },
     featureList: {
-        marginTop: SIZES.spacing.sm,
+        marginTop: 8,
     },
     featureItem: {
         flexDirection: 'row',
         alignItems: 'flex-start',
-        marginBottom: SIZES.spacing.md,
+        marginBottom: 12,
     },
     featureIcon: {
         fontSize: 18,
-        marginRight: SIZES.spacing.md,
+        marginRight: 12,
         marginTop: 2,
     },
     featureText: {
         flex: 1,
-        fontSize: SIZES.md,
+        fontSize: 14,
         color: COLORS.text,
         lineHeight: 20,
     },
     footer: {
-        paddingHorizontal: SIZES.spacing.lg,
-        paddingBottom: SIZES.spacing.md,
+        paddingHorizontal: 20,
+        paddingBottom: 12,
         alignItems: 'center',
     },
     versionText: {
-        fontSize: SIZES.sm,
+        fontSize: 12,
         color: COLORS.textLight,
     },
     copyrightText: {
-        fontSize: SIZES.xs,
+        fontSize: 10,
         color: COLORS.textLight,
         marginTop: 2,
     },
     button: {
         backgroundColor: COLORS.primary,
-        marginHorizontal: SIZES.spacing.lg,
-        marginBottom: SIZES.spacing.lg,
-        paddingVertical: SIZES.spacing.base,
-        borderRadius: SIZES.radius.md,
+        marginHorizontal: 20,
+        marginBottom: 20,
+        paddingVertical: 14,
+        borderRadius: 10,
         alignItems: 'center',
     },
     buttonText: {
-        fontSize: SIZES.base,
+        fontSize: 16,
         fontWeight: '600',
-        color: COLORS.textOnPrimary,
+        color: '#FFFFFF',
     },
 });
 
