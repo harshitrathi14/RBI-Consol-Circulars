@@ -1,0 +1,1500 @@
+[
+  {
+    "id": "sbr",
+    "title": "NBFC \u2013 Registration, Exemptions & Scale Based Regulation",
+    "tags": [
+      "framework",
+      "governance",
+      "prudential"
+    ],
+    "function": "Defines the master framework for classifying NBFCs into Base, Middle, Upper and Top Layers with differentiated prudential intensity, capital triggers and governance expectations.",
+    "actions": [
+      "Track consolidated assets for all group NBFCs so that the correct layer (Base, Middle or Upper) is determined as soon as the \u20b91,000 crore trigger is crossed (para 10\u201323).",
+      "Use the SBR scorecard (35% size/leverage, 25% interconnectedness, 10% complexity and 30% supervisory inputs) to simulate whether the entity is close to Upper Layer identification (para 24\u201326).",
+      "Execute the NOF glide path (\u20b92\u2192\u20b95\u2192\u20b910 crore) for ICC/MFI/Factor entities by March 2027 and maintain documentation that the board has reviewed capital augmentation each year (para 39\u201342).",
+      "When multiple NBFCs exist in a group, aggregate assets for classification and prepare remediation plans if the Reserve Bank directs migration to a higher layer (para 17\u201319)."
+    ],
+    "other": [
+      "Government-owned NBFCs can only sit in the Base or Middle Layer unless specifically escalated by RBI (para 15(4)).",
+      "NBFC-P2P, NBFC-AA, NOFHC and entities without public funds/customer interface are permanently assigned to the Base Layer (para 15(1)).",
+      "Identification for the Upper Layer happens annually as on 31 March, so boards should review data points (exposure, leverage, qualitative inputs) before that reference date (para 25)."
+    ],
+    "controls": [
+      "Board committees should minute deliberations whenever asset size fluctuates around \u20b91,000 crore so compliance with Middle Layer norms remains continuous (para 22\u201323).",
+      "Maintain group-wide MIS showing asset size, leverage and interconnectedness metrics feeding into the parametric scorecard, along with documentation for any supervisory feedback (para 24\u201326).",
+      "Embed policy annexures spelling out which RBI Master Directions bite at each layer so staff can enforce tighter governance automatically after migration."
+    ],
+    "reporting": [
+      "Submit revised statutory returns immediately after moving into a new layer; continue filing as NBFC-ML until the next audited balance sheet and RBI dispensation confirm reclassification (para 23).",
+      "Retain board-approved evidence of NOF compliance and furnish it to the Department of Supervision when requested (para 39\u201343).",
+      "Document the methodology used to calculate consolidated group assets so supervisors can validate treatment of subsidiaries and unregistered CICs (para 17\u201318)."
+    ],
+    "thresholds": [
+      "Base Layer: non-deposit taking institutions with assets below \u20b91,000 crore plus NBFC-P2P, NBFC-AA, NOFHC and NBFCs without public funds/customer interface (para 10, 15).",
+      "Middle Layer: every deposit-taking NBFC and all others with asset size \u2265\u20b91,000 crore, determined at solo or consolidated group level (para 11, 17\u201318).",
+      "Upper Layer scoring gives 70% weight to quantitative factors (35% size/leverage, 25% interconnectedness, 10% complexity) and 30% to supervisory/qualitative inputs, reviewed annually as on 31 March (para 24\u201325)."
+    ],
+    "deep_dive": "Chapter II of the SBR Directions lays out a graduated regime: Base Layer NBFCs follow simplified norms, Middle Layer entities comply with legacy NBFC-D/NBFC-ND-SI requirements, and Upper Layer firms face bank-like oversight triggered through a 70:30 parametric scorecard. The Reserve Bank checks the classification every year using March-end data and can also use supervisory judgment to pull entities into the Upper Layer or even populate the Top Layer if systemic risk is flagged. Because layers apply at the group level, NBFCs owned by common promoters must aggregate assets and be ready to move up the stack as soon as the \u20b91,000 crore test is breached.",
+    "rcsa": [
+        {"control": "Asset Size Monitoring", "risk": "Incorrect classification due to asset size changes", "frequency": "Quarterly"},
+        {"control": "NOF Glide Path", "risk": "Failure to meet the NOF requirements by the specified dates", "frequency": "Annual"},
+        {"control": "CET1 Buffer Maintenance", "risk": "Non-compliance with the additional CET1 buffer for Upper Layer NBFCs", "frequency": "Monthly"},
+        {"control": "Group Asset Consolidation", "risk": "Incorrect aggregation of assets for group NBFCs", "frequency": "Quarterly"}
+    ]
+  },
+  {
+    "id": "public-deposits",
+    "title": "NBFC \u2013 Acceptance of Public Deposits",
+    "tags": [
+      "liability",
+      "customer",
+      "prudential"
+    ],
+    "function": "Sets the prudential framework for NBFCs that mobilise public deposits, covering eligibility, rating, tenor, interest and depositor protection rules.",
+    "actions": [
+      "Obtain and maintain at least a 'BBB-' fixed-deposit rating from a SEBI-recognised agency and inform RBI within 15 working days of any rating change (paras 12-13).",
+      "Accept deposits only between 12 and 60 months, issue receipts immediately, and prohibit demand or NRI deposits unless FEMA conditions are met (paras 15-21).",
+      "Ensure the outstanding stock of public deposits (including renewals) never exceeds 1.5 times NOF, stopping fresh acceptance until the excess runs off (para 17).",
+      "Cease taking fresh deposits immediately upon a rating downgrade below the minimum grade and let existing deposits mature while reporting the position to RBI (para 18)."
+    ],
+    "other": [
+      "Interest can be paid or compounded no more frequently than monthly and the rate itself cannot exceed 12.5% per annum (para 19).",
+      "Renewals require explicit depositor consent and premature repayment is barred before 3 months, with interest sacrifice thereafter (paras 23-26).",
+      "Advertisements and application forms must display the latest rating, the unsecured nature of deposits and the standard RBI caveat (paras 21-22)."
+    ],
+    "controls": [
+      "Activate automatic stop-acceptance triggers whenever deposits approach the 1.5\u00d7 NOF ceiling or prudential norms are breached (para 17).",
+      "Maintain the mandated liquid asset reserve in approved securities under lien-free custody solely for deposit protection (paras 29-33).",
+      "Keep an auditable register of each depositor with KYC, tenor and repayment data ready for inspection (paras 34-49)."
+    ],
+    "reporting": [
+      "File the full suite of NBS returns and the Liquid Asset Return on or before the due dates, attaching the valid rating letter as required throughout the chapter.",
+      "Advise the Regional Office immediately of any default or supervisory adverse finding connected with deposits.",
+      "Pass and submit the yearly board resolution confirming whether the company accepts public deposits, as required under paragraph 5011 onwards of the compilation."
+    ],
+    "thresholds": [
+      "Public deposits outstanding must remain within 1.5\u00d7 Net Owned Fund; excess blocks fresh acceptance until the balance is run down (para 17).",
+      "Only deposits with tenors of 12-60 months are allowed; premature withdrawal before three months is prohibited and between 3-12 months leads to full interest forfeiture (paras 16, 23-25).",
+      "Maximum interest payable is 12.5% per annum with rests not shorter than monthly (para 19)."
+    ],
+    "deep_dive": "Chapter II lays out the entire acceptance machinery: a minimum 'BBB-' rating, a hard 12-60 month tenor band, a 12.5% interest cap and a 1.5\u00d7 NOF limit on the stock of deposits. Any rating downgrade or prudential breach freezes fresh mobilisation, while liquid assets, depositor registers and frequent returns let supervisors monitor how depositor money is protected.",
+    "rcsa": [
+        {"control": "Deposit Limit Monitoring", "risk": "Breach of the 1.5x NOF limit for public deposits", "frequency": "Monthly"},
+        {"control": "Liquid Asset Maintenance", "risk": "Shortfall in the daily maintenance of liquid assets", "frequency": "Daily"},
+        {"control": "Rating Compliance", "risk": "Failure to maintain the minimum investment-grade rating", "frequency": "Annual"},
+        {"control": "Depositor Exposure Monitoring", "risk": "Exceeding the single depositor exposure cap", "frequency": "Monthly"}
+    ]
+  },
+  {
+    "id": "microfinance",
+    "title": "NBFC \u2013 Microfinance Institution",
+    "tags": [
+      "lending",
+      "customer",
+      "conduct"
+    ],
+    "function": "Aligns the definition, underwriting and prudential regime for NBFC-MFIs and other NBFCs that extend collateral-free microfinance loans.",
+    "actions": [
+      "Adopt a board-approved methodology to assess household income (capturing profiles, expenses and corroboration) and store the assessed figure for every borrower (paras 52-54).",
+      "Ensure total monthly loan obligations of a household stay within 50% of verified income and block disbursements where the cap is breached (paras 55-57).",
+      "Report household income and loan data to all CICs and rely on bureau feedback plus borrower declarations to monitor indebtedness (para 58).",
+      "Maintain qualifying assets (collateral-free microfinance loans) at a minimum 60% of total assets, net of intangibles, on an ongoing basis (para 12)."
+    ],
+    "other": [
+      "Microfinance loans are collateral-free and limited to households with annual income up to \u20b93,00,000; the loans cannot be linked to deposit liens (para 51).",
+      "Repayment periodicity must be flexible and aligned to borrower preferences (para 59).",
+      "Interest rates and charges must follow a transparent, board-approved policy and are subject to supervisory scrutiny for usury (paras 60-61)."
+    ],
+    "controls": [
+      "Record and internally audit evidence supporting income assessment, repayment calculations and compliance with the 50% cap.",
+      "Tag and monitor all microfinance loans for SMA/NPA classification on a 90-day DPD basis to align with Chapter IV prudential rules (paras 22-25).",
+      "Maintain a separate segment for channelising government schemes so that such exposures do not distort the qualifying asset ratio (para 13)."
+    ],
+    "reporting": [
+      "Submit regulatory returns capturing qualifying asset percentage, geographic spread and pricing information per the master direction.",
+      "Update CICs with income and indebtedness data and document reasons whenever reported income differs from newly assessed income (para 54).",
+      "Inform RBI with a remediation plan if the 60% qualifying asset threshold is breached for four consecutive quarters (para 12)."
+    ],
+    "thresholds": [
+      "Household annual income limit: up to \u20b93,00,000 for eligibility as a microfinance borrower (para 51).",
+      "Total monthly loan repayments for a household must not exceed 50% of verified monthly income (paras 55-57).",
+      "NBFC-MFIs must keep qualifying assets (microfinance loans) at or above 60% of total assets net of intangibles (para 12)."
+    ],
+    "deep_dive": "Chapter V of the Microfinance Loan Directions harmonises the sector by defining microfinance loans as collateral-free, income-capped exposures and by imposing a 50% indebtedness cap and a 60% qualifying-asset floor. Boards are expected to lay down income assessment, pricing and collection policies, while prudential treatment such as 90-day NPA recognition and provisioning applies to these portfolios.",
+    "rcsa": [
+        {"control": "Income Verification", "risk": "Incorrect assessment of household income", "frequency": "Per Loan"},
+        {"control": "Repayment Obligation Check", "risk": "Breach of the 50% repayment obligation cap", "frequency": "Per Loan"},
+        {"control": "Qualifying Assets Monitoring", "risk": "Failure to maintain the 60% qualifying assets ratio", "frequency": "Quarterly"},
+        {"control": "Pricing Policy Review", "risk": "Non-compliance with the board-approved pricing policy", "frequency": "Annual"}
+      ]
+    },
+  {
+    "id": "p2p",
+    "title": "NBFC \u2013 Peer to Peer Lending Platform",
+    "tags": [
+      "technology",
+      "lending",
+      "customer"
+    ],
+    "function": "Prescribes the licensing, prudential, disclosure and fund-transfer architecture for NBFC-P2P platforms.",
+    "actions": [
+      "Maintain leverage ratio \u22642 (outside liabilities / owned funds) and confine activities to loan facilitation plus ancillary functions listed in paras 22-24.",
+      "Enforce lender exposure caps: aggregate lending across all P2Ps \u2264\u20b950 lakh, any lending above \u20b910 lakh needs a CA certificate of net worth \u2265\u20b950 lakh, single borrower exposure per lender \u2264\u20b950,000 (paras 26-28).",
+      "Ensure loans taken across all P2Ps by a borrower are capped at \u20b910 lakh and maturities do not exceed 36 months (paras 27, 29).",
+      "Operate two escrow accounts (lender inflows and borrower repayments) via a bank-promoted trustee and ensure funds move only between verified bank accounts with T+1 settlement (para 37-38)."
+    ],
+    "other": [
+      "NBFC-P2Ps must remain in the Base Layer but still comply with specific Governance, KYC, Responsible Conduct and other master directions referenced in para 4.",
+      "Platforms cannot offer any activity beyond those in paras 22-23 and must disclose caveats and performance metrics on their website (paras 23-24, 40).",
+      "Information-system audits by CISA-certified external auditors are required at least once every two years, and a BCP must ensure servicing continuity (paras 54-58)."
+    ],
+    "controls": [
+      "Set up board-approved policies on participant eligibility, pricing of services and mapping lenders to borrowers in an equitable manner (para 32).",
+      "Obtain participant declarations to evidence compliance with exposure caps and keep CIC reporting consents in all agreements (paras 30, 39).",
+      "Display grievance contacts prominently and dispose of complaints within one month per the board-approved redress policy (paras 51-52)."
+    ],
+    "reporting": [
+      "Report borrower performance to CICs per the Credit Information Reporting Directions (para 39).",
+      "Submit the external IS audit report to the Regional Office within one month of receipt (para 57).",
+      "Publish monthly portfolio performance including NPA ratios and loss data for lenders (para 40(3)(iv))."
+    ],
+    "thresholds": [
+      "Leverage ratio \u22642 (para 25).",
+      "Lender exposure caps: \u20b950 lakh aggregate across platforms; exposures above \u20b910 lakh need lender net worth \u2265\u20b950 lakh; single borrower exposure per lender \u2264\u20b950,000 (paras 26-28).",
+      "Borrower-side cap: total loans across P2Ps \u2264\u20b910 lakh, maturity \u226436 months (paras 27, 29)."
+    ],
+    "deep_dive": "The NBFC-P2P Directions keep platforms in the Base Layer but impose micro-prudential rules: leverage capped at 2\u00d7, escrow-based fund flows, strict lender and borrower exposure caps, and granular disclosure and grievance requirements.They also anchor platforms to broader RBI frameworks (governance, responsible conduct, KYC, IT governance), ensuring that loan facilitation remains transparent and ring-fenced from customer funds.",
+    "rcsa": [
+        {"control": "Lender Exposure Monitoring", "risk": "Breach of lender exposure limits", "frequency": "Per Transaction"},
+        {"control": "Borrower Exposure Monitoring", "risk": "Breach of borrower exposure limits", "frequency": "Per Transaction"},
+        {"control": "Escrow Account Reconciliation", "risk": "Mismatch in escrow account balances", "frequency": "Daily"},
+        {"control": "Cybersecurity Penetration Testing", "risk": "Vulnerabilities in the platform's IT systems", "frequency": "Semi-Annual"}
+    ]
+  },
+  {
+    "id": "account-aggregator",
+    "title": "NBFC \u2013 Account Aggregator",
+    "tags": [
+      "technology",
+      "data",
+      "customer"
+    ],
+    "function": "Creates the consent-driven data-sharing framework for NBFC-Account Aggregators (AAs).",
+    "actions": [
+      "Maintain minimum NOF of \u20b92 crore and stay within the Base Layer while complying with the referenced Governance, KYC, Miscellaneous and Voluntary Amalgamation directions (paras 3-6 plus para 39 of the general chapter).",
+      "Only retrieve, consolidate and present customer financial information as per explicit consent artefacts; no other business activity is permitted (para 8).",
+      "Adopt the ReBIT-published API specifications and ensure IT systems can meet RBI's data security, disaster recovery and continuity expectations (paras 32-34)."
+    ],
+    "other": [
+      "Information-system audits by CISA-certified external auditors must be run at least once every two years and filed with RBI within one month (para 30).",
+      "Customers must be able to see all consents granted and which FIUs have been given access; AAs cannot reuse data beyond the contracted purpose (paras 35-36).",
+      "Complaints must be closed within the timeframe set by the board policy but never beyond one month; unresolved matters can be escalated to RBI or the Ombudsman (paras 37-40)."
+    ],
+    "controls": [
+      "Board to approve pricing policy, grievance policy, IT controls and oversight committees as demanded by the Governance Direction references (paras 41-45).",
+      "Segregate environments for consent capture, token exchange and data routing so that customer data is not stored or altered except for the mandated transfer service (paras 32-36).",
+      "Implement business continuity and disaster recovery plans covering safe storage of consent artefacts and logs (para 30)."
+    ],
+    "reporting": [
+      "Submit the biennial IS audit report to the Regional Office within one month of completion (para 30).",
+      "Maintain and produce on demand records of every consent artefact, FIU data pull and grievance disposition (paras 35-39).",
+      "Disclose pricing and key policies publicly and keep RBI informed of any major service disruption or governance changes."
+    ],
+    "thresholds": [
+      "Minimum Net Owned Fund: \u20b92 crore as per the general NOF clause (para 39 of the master chapter).",
+      "IS audit cadence: at least once in two years with reports filed within a month (para 30).",
+      "Complaint redress timeline: within one month from receipt (para 38)."
+    ],
+    "deep_dive": "The AA framework strictly limits entities to consent-driven retrieval and presentation of financial information. RBI anchors them in the Base Layer but overlays heavy IT-governance, consent logging, grievance and audit obligations to protect customer data and ensure seamless interoperability via the ReBIT API stack.",
+    "rcsa": [
+        {"control": "NOF and Net Worth Monitoring", "risk": "Breach of minimum NOF and net worth requirements", "frequency": "Monthly"},
+        {"control": "Data Storage and Deletion", "risk": "Failure to delete retrieved data within 72 hours", "frequency": "Daily"},
+        {"control": "Uptime Monitoring", "risk": "Failure to meet the 99.5% uptime target", "frequency": "Monthly"},
+        {"control": "Consent Management Review", "risk": "Non-compliance with consent artefact requirements", "frequency": "Quarterly"}
+    ]
+  },
+  {
+    "id": "core-investment",
+    "title": "Core Investment Companies",
+    "tags": [
+      "group",
+      "capital",
+      "governance"
+    ],
+    "function": "Covers structure, prudential norms and governance for Core Investment Companies (CICs).",
+    "actions": [
+      "Ensure at least 90% of net assets are invested in equity, preference shares, debt or loans to group companies, with equity (including compulsorily convertible instruments within 10 years) forming at least 60% (para 3(1)-(2)).",
+      "Restrict activities to permitted investments/loans/guarantees for group companies and block sales for dilution/disinvestment; no trading book activity is allowed (para 3(3)-(4)).",
+      "Tag non-financial assets (like real estate for own use) within the 10% allowance so that the 90% financial asset test remains intact (Note to para 3)."
+    ],
+    "other": [
+      "Exposure to InvIT units is limited to sponsor holdings complying with SEBI minimum holding and lock-in rules (para 3(2) proviso).",
+      "CICs cannot enter commodity derivative contracts or hold non-permitted financial assets outside the group (Note to para 3).",
+      "Unregistered CICs under \u20b9100 crore that have accessed public funds trigger consolidation for SBR classification (para 17 of the master chapter)."
+    ],
+    "controls": [
+      "Keep leverage (outside liabilities / Adjusted Net Worth) within 2.5\u00d7 at all times (para 23).",
+      "Maintain internal ICAAP to test capital adequacy vis-\u00e0-vis risk assets as demanded in para 24 and align with Prudential Norms Directions.",
+      "Ensure board-approved policies govern guarantees, intra-group loans and block-sale decisions, with documentation for supervisory review."
+    ],
+    "reporting": [
+      "Comply with the registration and reporting requirements in paras 13-16 (application, CoR display, etc.).",
+      "Submit risk-based supervision data on group exposures, leverage and capital to RBI when called upon (Chapter III).",
+      "Disclose compliance with investment composition and leverage in financial statements as per the Financial Statement Directions."
+    ],
+    "thresholds": [
+      "Minimum investment composition: \u226590% of net assets in group investments/loans; \u226560% specifically in equity instruments/InvIT sponsorship units (para 3).",
+      "Leverage cap: outside liabilities \u22642.5\u00d7 Adjusted Net Worth (para 23).",
+      "Risk weights: equity/debenture exposures to group companies attract 100% risk weight for capital computation (para 21)."
+    ],
+    "deep_dive": "The CIC Directions codify the old 90/60 investment tests, prohibit trading, prescribe a leverage ceiling of 2.5\u00d7 ANW and map CICs into the SBR stack. They also align CICs with IRACP, investment classification, governance and disclosure instructions that now apply uniformly to NBFCs.",
+    "rcsa": [
+        {"control": "Investment Composition Monitoring", "risk": "Breach of the 90/60 investment composition rule", "frequency": "Quarterly"},
+        {"control": "Leverage Ratio Monitoring", "risk": "Breach of the 2.5x leverage cap", "frequency": "Monthly"},
+        {"control": "Exposure Limit Monitoring", "risk": "Breach of single/group investee exposure limits", "frequency": "Quarterly"},
+        {"control": "Internal Audit Review", "risk": "Inadequate coverage of related-party guarantees and liquidity risk", "frequency": "Quarterly"}
+    ]
+  },
+  {
+    "id": "spd",
+    "title": "Standalone Primary Dealers",
+    "tags": [
+      "markets",
+      "capital",
+      "liquidity"
+    ],
+    "function": "Defines licensing, capital, funding and trading norms for Standalone Primary Dealers (SPDs).",
+    "actions": [
+      "Maintain minimum NOF of \u20b9150 crore if undertaking only core PD activities and \u20b9250 crore if also doing permitted non-core business, while keeping \u226550% of total financial investments in government securities at all times (para 115-117).",
+      "Adhere to borrowing limits: average call/notice market borrowing up to 225% of NOF per reporting fortnight with lending capped at 25% of NOF; ICDs capped at 150% of NOF with minimum tenor one week (paras 107-109).",
+      "Keep FCNR(B) borrowings within 25% of NOF with at least 50% of the exposure hedged at all times; external commercial borrowings are prohibited (para 110-112)."
+    ],
+    "other": [
+      "SPDs must maintain overall capital adequacy by holding 15% capital for credit risk (Tier I at least half of that) plus market risk charges calculated via VaR scaled by 6.67 (paras 95-101).",
+      "Diversified activities such as equity trading, underwriting equity issues or FX market making can consume at most 20% of NOF in terms of market risk capital (para 104).",
+      "Only a defined list of core activities (deal/underwrite G-Secs, interest-rate derivatives, call/notice lending, etc.) is permitted; non-core activities need additional NOF (para 118)."
+    ],
+    "controls": [
+      "Implement internal models for market risk (99% VaR over 15-day horizon with at least 250 trading days of data) and file parameters with RBI (paras 90-94).",
+      "Maintain ICAAP processes to link ANW and leverage with risk-taking (para 102).",
+      "Ensure repo/reverse repo exposures carry CCR capital per haircut schedules and bilateral netting rules (paras 32-50)."
+    ],
+    "reporting": [
+      "Submit periodic returns prescribed in Chapter VIII (balance sheet, SGL holdings, underwriting bids, risk metrics).",
+      "File the annual statement of compliance with diversification/market risk limits and update RBI on any breach immediately.",
+      "Report IS audit findings, capital computation workings and liquidity positions as part of supervisory reviews."
+    ],
+    "thresholds": [
+      "NOF floor: \u20b9150 crore for core-only SPDs; \u20b9250 crore when non-core activities are undertaken (para 115).",
+      "G-Sec predominance: at least 50% of total financial investments must be in G-Secs; daily G-Sec plus eligible corporate bond holdings must cover net short-term borrowings plus minimum NOF (paras 116-117).",
+      "Borrowing caps: call/notice borrowing \u2264225% of NOF per reporting fortnight with lending capped at 25% of NOF; ICDs \u2264150% of NOF with \u22651 week tenor (paras 107-109)."
+    ],
+    "deep_dive": "The SPD Directions transplant the PD rulebook into the NBFC compilation: minimum capital, leverage-linked funding limits, VaR-based market risk capital and G-Sec predominance requirements ensure PDs remain focused on government securities while diversifications are tightly rationed.",
+    "rcsa": [
+        {"control": "CRAR and NOF Monitoring", "risk": "Breach of CRAR and NOF requirements", "frequency": "Monthly"},
+        {"control": "Turnover and Inventory Monitoring", "risk": "Failure to meet the 50% turnover and minimum inventory requirements", "frequency": "Daily"},
+        {"control": "Auction Bidding and Success Ratio", "risk": "Non-compliance with primary auction bidding obligations", "frequency": "Per Auction"},
+        {"control": "Mark-to-Market and VaR Calculation", "risk": "Incorrect calculation of MTM and VaR", "frequency": "Daily"}
+    ]
+  },
+  {
+    "id": "mortgage-guarantee",
+    "title": "Mortgage Guarantee Companies",
+    "tags": [
+      "lending",
+      "capital",
+      "customer"
+    ],
+    "function": "Provides licensing and prudential norms for Mortgage Guarantee Companies (MGCs).",
+    "actions": [
+      "Ensure each mortgage guarantee is a tripartite contract guaranteeing 100% of principal plus interest, payable on invocation without netting against collateral proceeds (para 20).",
+      "Do not accept public deposits or raise external commercial borrowings; fund operations through capital and permitted instruments only (paras 21-22).",
+      "Maintain minimum NOF \u20b9100 crore at commencement (subject to RBI review after three years) and document board plans for capital augmentation (para 23)."
+    ],
+    "other": [
+      "Capital adequacy: total capital ratio \u226510% with Tier I \u22656% and Tier II capped at 100% of Tier I (paras 24-26).",
+      "Off-balance sheet mortgage guarantees carry a 50% credit conversion factor when computing risk-weighted assets (para 28).",
+      "MGCs fall under SBR and must adhere to referenced governance, concentration risk, outsourcing and resolution frameworks (para 4)."
+    ],
+    "controls": [
+      "Set board-approved underwriting, pricing and reserving policies tailored to guarantee exposures, including treatment of recoveries and claim pay-outs.",
+      "Monitor portfolio RWAs, ensuring capital buffers stay above the 10%/6% thresholds even after guarantee invocations.",
+      "Comply with Chapter IV governance requirements (fit-and-proper directors, audit and nomination committees) and maintain escalation procedures for claim disputes."
+    ],
+    "reporting": [
+      "File statutory returns on capital adequacy, guarantee volumes and claim experience per the Financial Statement and Miscellaneous Directions.",
+      "Report any breach of NOF/capital requirements to RBI immediately and submit remediation plans.",
+      "Maintain granular registers of outstanding guarantees, premium income and claim history for supervisory inspections."
+    ],
+    "thresholds": [
+      "Minimum Net Owned Fund: \u20b9100 crore at commencement (para 23).",
+      "Capital adequacy: overall CAR \u226510%; Tier I ratio \u22656%; Tier II \u2264100% of Tier I (paras 24-26).",
+      "Mortgage guarantees attract a 50% credit conversion factor when calculating RWAs (para 28)."
+    ],
+    "deep_dive": "MGCs are barred from deposit-taking/ECB borrowings, must capitalise themselves with at least \u20b9100 crore, and hold 10% capital (6% Tier I) against on- and off-balance-sheet mortgage guarantee exposures. The Directions embed them in the wider NBFC governance, resolution and disclosure framework while keeping the guarantee product structure standardised.",
+    "rcsa": [
+        {"control": "NOF and Solvency Ratio Monitoring", "risk": "Breach of NOF and solvency ratio requirements", "frequency": "Monthly"},
+        {"control": "MGR Creation", "risk": "Failure to create the Mortgage Guarantee Reserve", "frequency": "Annual"},
+        {"control": "Exposure Limit Monitoring", "risk": "Breach of single counterparty and project exposure limits", "frequency": "Quarterly"},
+        {"control": "Claims Settlement TAT", "risk": "Delay in settlement of claims beyond 90 days", "frequency": "Per Claim"}
+    ]
+  },
+  {
+    "id": "hfc",
+    "title": "Housing Finance Companies",
+    "tags": [
+      "lending",
+      "prudential",
+      "customer"
+    ],
+    "function": "Aligns housing finance companies (HFCs) with RBI's capital, asset quality, LTV and governance norms.",
+    "actions": [
+      "Maintain minimum Capital Adequacy Ratio of 15% with Tier I of at least 10% and Tier II capped at 100% of Tier I; implement ICAAP to support this (para 20-21).",
+      "Meet the principal business criteria: at least 50% of net assets deployed in housing finance and at least 75% of that towards individual loans (paras 14-17).",
+      "Apply LTV-linked risk weights to housing loans (\u2264\u20b930 lakh up to 90% LTV, \u20b930-75 lakh capped at 80%, >\u20b975 lakh capped at 75%) and monitor that new disbursals honour these caps (para 22 table)."
+    ],
+    "other": [
+      "Gold standard asset classification follows the 90-day NPA norm (Chapter IV).",
+      "Risk weights for mortgage loans reduce when the mortgage guarantee portion is rated AA/AAA per para 22 notes.",
+      "Deposit-taking HFCs must also comply with the NBFC Acceptance of Public Deposits directions referenced in Chapter VI."
+    ],
+    "controls": [
+      "Track risk-weighted assets and allocate capital buffers for both on- and off-balance sheet exposures per the table in para 22.",
+      "Maintain board oversight on LTV policy, ensuring retail housing disbursals stay within regulatory caps.",
+      "Implement governance, KYC, outsourcing and fair practices policies referenced throughout Chapters VII-XI."
+    ],
+    "reporting": [
+      "Submit statutory returns to RBI/NHB on capital adequacy, exposure norms, ALM and branch operations as laid out in Chapter XII.",
+      "Provide auditor certificates for NOF/glide-path compliance and promptly report any breach of principal business criteria (paras 16-18).",
+      "Disclose LTV bands, asset classification data and liquidity information in financial statements per the Financial Statement Directions."
+    ],
+    "thresholds": [
+      "Capital Adequacy: CAR \u226515% with Tier I \u226510%; Tier II \u2264100% of Tier I (para 20).",
+      "LTV caps: loans up to \u20b930 lakh may go up to 90% LTV; \u20b930-75 lakh capped at 80%; loans above \u20b975 lakh capped at 75% (para 22 table).",
+      "Risk weights drop to 35%/50% where LTV bands are met; portions guaranteed by AAA-rated mortgage guarantee companies can carry 20% risk weight (para 22)."
+    ],
+    "deep_dive": "The HFC Directions transplant RBI's NBFC rulebook into the housing finance space, mandating 15% capital (10% Tier I), income-recognition at 90 days, granular LTV/risk-weight grids and comprehensive governance, branch, auditor and FPC instructions. They also define principal business tests to keep HFCs focused on housing credit.",
+    "rcsa": [
+        {"control": "CRAR and Leverage Ratio Monitoring", "risk": "Breach of CRAR and leverage ratio requirements", "frequency": "Monthly"},
+        {"control": "Principal Business Criteria Monitoring", "risk": "Failure to meet the principal business criteria", "frequency": "Quarterly"},
+        {"control": "LTV Cap Compliance", "risk": "Breach of LTV caps for new loans", "frequency": "Per Loan"},
+        {"control": "LCR Maintenance", "risk": "Shortfall in LCR maintenance", "frequency": "Daily"}
+    ]
+  },
+  {
+    "id": "nofhc",
+    "title": "Non-Operating Financial Holding Companies",
+    "tags": [
+      "group",
+      "governance",
+      "capital"
+    ],
+    "function": "Governs non-operative financial holding companies that anchor bank-led groups.",
+    "actions": [
+      "Ring-fence all banking and financial services subsidiaries under the NOFHC; the NOFHC itself cannot undertake other financial activity (Chapters II & V).",
+      "Transfer at least 25% of annual profits to a reserve fund before declaring dividends and pay dividends only after meeting stand-alone and consolidated prudential norms (para 22-23).",
+      "Limit leverage to 1.25\u00d7 of paid-up equity plus free reserves, aligning borrowings to dividend inflows (para 25)."
+    ],
+    "other": [
+      "Stand-alone prudential norms mirror commercial-bank investment, IRACP, ALM and disclosure instructions (paras 19-24).",
+      "Consolidated supervision requires the NOFHC to prepare consolidated financials, SLS/IRS statements and meet capital adequacy norms applicable to banking groups (paras 26-29).",
+      "Exposure norms forbid intra-group equity/debt exposure outside entities held under the NOFHC and bar exposures to promoter entities (paras 30-42)."
+    ],
+    "controls": [
+      "Maintain governance committees (audit, nomination, remuneration) and run fit-and-proper checks on directors with prompt reporting to RBI (Chapter III).",
+      "Implement group-wide MIS to monitor exposures, liquidity and ALM both on stand-alone and consolidated basis (paras 24, 29).",
+      "Enforce prohibitions on round tripping and ensure entities under the NOFHC do not invest in each other\u2019s capital instruments (para 42)."
+    ],
+    "reporting": [
+      "Submit consolidated supervision data, capital adequacy computations and exposure reports as prescribed in Chapters IV and VI.",
+      "Notify RBI of any change in shareholding or structure and seek approvals prior to acquiring new financial entities (Chapter II).",
+      "Maintain records of profit transfers to reserve funds and dividend policy decisions for supervisory scrutiny."
+    ],
+    "thresholds": [
+      "Leverage cap: outside liabilities limited to 1.25\u00d7 paid-up equity capital plus free reserves (para 25).",
+      "Reserve transfer: \u226525% of annual profits to reserve fund before dividend declaration (para 22).",
+      "Bank under the NOFHC cannot invest in promoter group entities or other NOFHCs; equity investments outside the group limited to 10% of investee capital or 10% of the bank\u2019s capital and reserves (para 41)."
+    ],
+    "deep_dive": "NOFHCs act purely as holding shells. RBI applies bank-style prudential, exposure and disclosure rules on both solo and consolidated basis while capping leverage at 1.25\u00d7 and mandating profit transfers to reserves. Exposure firewalls prevent round-tripping among promoter entities and enforce arms-length dealings between the bank and other subsidiaries.",
+    "rcsa": [
+        {"control": "NOF and Leverage Monitoring", "risk": "Breach of NOF and leverage requirements", "frequency": "Monthly"},
+        {"control": "Shareholding Limit Monitoring", "risk": "Breach of promoter shareholding limits", "frequency": "Annual"},
+        {"control": "Board Composition Review", "risk": "Non-compliance with independent director requirements", "frequency": "Annual"},
+        {"control": "Arm's Length Pricing Review", "risk": "Intra-group transactions not at arm's length", "frequency": "Quarterly"}
+    ]
+  },
+  {
+    "id": "branch-authorisation",
+    "title": "NBFC \u2013 Branch Authorisation",
+    "tags": [
+      "operations",
+      "customer",
+      "governance"
+    ],
+    "function": "Specifies how NBFCs/HFCs open, close or relocate branches and appoint agents.",
+    "actions": [
+      "Deposit-taking NBFCs with NOF up to \u20b950 crore or rating below AA can open branches/appoint agents only within their home state; those with NOF above \u20b950 crore and AA or higher rating may expand anywhere in India, subject to RBI notification (para 5).",
+      "Notify RBI (through PRAVAAH) before opening a branch; if RBI does not reject within 30 days, the NBFC may proceed (para 6).",
+      "HFCs must inform NHB before opening branches within India and are barred from opening branches abroad (paras 7-8).",
+      "NBFC-ICCs lending against gold require prior RBI approval to exceed 1,000 branches; entities already beyond 1,000 branches need approval for further expansion and must provide secure storage at each branch (para 9)."
+    ],
+    "other": [
+      "Closure of branches may require prior notice to customers and RBI, especially when deposits or customer service points are affected (Chapter II.B).",
+      "Opening representative offices abroad demands compliance with FEMA and specific RBI approvals (Chapter II.C).",
+      "Directions apply across layers, so Base Layer NBFCs with customer interface but no public funds still need to follow notification norms."
+    ],
+    "controls": [
+      "Maintain internal controls to ensure only eligible locations/agencies are opened and that secure infrastructure (especially for gold loans) is in place before launch.",
+      "Document RBI/NHB correspondences and keep branch registers updated for supervisory checks.",
+      "Put in place customer communication plans when branches are relocated or closed to meet notice requirements."
+    ],
+    "reporting": [
+      "File notifications/approval requests via PRAVAAH and retain acknowledgement numbers.",
+      "Keep NHB apprised of HFC branch plans and maintain evidence of submissions.",
+      "Report closures/relocations promptly to RBI/NHB and update statutory records accordingly."
+    ],
+    "thresholds": [
+      "Deposit-taking NBFC expansion is constrained by NOF \u20b950 crore and minimum AA rating for pan-India branches (para 5).",
+      "RBI has 30 days to reject a notified branch proposal; silence equals deemed approval (para 6).",
+      "Gold-loan NBFCs require RBI approval to exceed 1,000 branches and must provide secure storage at each new branch (para 9)."
+    ],
+    "deep_dive": "The Branch Authorisation Directions give deposit-taking NBFCs a notification-based regime, but branch expansion is tied to capital/rating comfort. HFCs coordinate with NHB, NBFC-ICCs dealing in gold need pre-clearance beyond 1,000 outlets, and all entities must manage closures/overseas offices with regulatory oversight.",
+    "rcsa": [
+        {"control": "Branch Opening/Closure Reporting", "risk": "Failure to report branch openings/closures within 30 days", "frequency": "Per Event"},
+        {"control": "Rural Branch Quota", "risk": "Non-compliance with the 25% rural branch quota", "frequency": "Annual"},
+        {"control": "Branch Closure Notice", "risk": "Failure to provide 90-day public notice for branch closures", "frequency": "Per Event"},
+        {"control": "Branch Register Maintenance", "risk": "Incomplete or inaccurate branch register", "frequency": "Ongoing"}
+    ]
+  },
+  {
+    "id": "financial-services",
+    "title": "NBFC \u2013 Undertaking of Financial Services",
+    "tags": [
+      "strategy",
+      "licensing",
+      "governance"
+    ],
+    "function": "Controls NBFC investments in alternative investment funds and the conditions for entering new financial services lines or overseas ventures.",
+    "actions": [
+      "Update investment policies to cover AIF exposures: NBFCs cannot contribute more than 10% of a scheme\u2019s corpus and aggregate regulated-entity holdings in an AIF are capped at 20% (paras 7-9).",
+      "Provide 100% provisioning (capped at the direct exposure) when >5% of the AIF corpus flows to an NBFC\u2019s debtor company via downstream investments, and deduct subordinated units from capital in full (paras 10-11).",
+      "Respect the effective date (no later than 1 Jan 2026) for the revised AIF rules and choose whether legacy commitments follow the new rules or Annex II until fully drawn (para 13-14).",
+      "Seek RBI approval before opening subsidiaries/JVs abroad and ensure aggregate overseas financial-sector investment stays within 100% of NOF, with each investee regulated in its host jurisdiction (para 17)."
+    ],
+    "other": [
+      "NBFC-P2P, NBFC-AA, NOFHC and MGCs are outside the scope of these Directions (para 3).",
+      "Policies on distributing mutual funds or insurance must be board-approved and include suitability and grievance frameworks (para 6).",
+      "Only financial services (as exhaustively listed in para 4) are permitted when forming subsidiaries/JVs; non-financial businesses are barred (para 17)."
+    ],
+    "controls": [
+      "Track all AIF commitments scheme-wise to enforce the 10%/20% caps and provisioning triggers.",
+      "Maintain diligence files demonstrating that overseas targets are regulated financial entities, with board minutes approving each investment (para 17).",
+      "Keep separate books for insurance/mutual fund distribution with suitability checks per the Fair Practices Code."
+    ],
+    "reporting": [
+      "Inform RBI of overseas investments via the approval process described in paras 15-18 and comply with FEMA filings.",
+      "Maintain records of AIF contributions, provisioning entries and any capital deductions for subordinated units for supervisory review.",
+      "Document board decisions on choosing Annex II vs new rules for legacy AIF commitments and keep evidence of the effective date applied."
+    ],
+    "thresholds": [
+      "AIF contribution limits: \u226410% per NBFC, \u226420% for all regulated entities combined (paras 8-9).",
+      "Provisioning: 100% of NBFC\u2019s proportionate investment when >5% of the AIF corpus is downstreamed to its debtor company; subordinated units are fully deducted from capital (paras 10-11).",
+      "Overseas investment cap: total financial-sector investment abroad \u2264100% of NOF, with only regulated entities eligible (para 17)."
+    ],
+    "deep_dive": "The Undertaking of Financial Services Directions embed numerical guardrails on AIF participation, provisioning for downstream exposure, and overseas expansion so NBFCs cannot use complex fund structures or foreign subsidiaries to sidestep core prudential norms.",
+    "rcsa": [
+        {"control": "Eligibility Criteria Check", "risk": "Entering a new financial service without meeting the eligibility criteria", "frequency": "Per Event"},
+        {"control": "Investment Limit Monitoring", "risk": "Breach of investment limits in subsidiaries", "frequency": "Quarterly"},
+        {"control": "Firewall Implementation", "risk": "Inadequate firewalls between the NBFC and its subsidiaries", "frequency": "Ongoing"},
+        {"control": "Annual Status Report", "risk": "Failure to file the annual status report on new financial services", "frequency": "Annual"}
+    ]
+  },
+  {
+    "id": "shareholding-control",
+    "title": "NBFC \u2013 Acquisition of Shareholding or Control",
+    "tags": [
+      "governance",
+      "licensing",
+      "group"
+    ],
+    "function": "Prescribes when prior RBI approval is needed for changes in NBFC ownership or control.",
+    "actions": [
+      "Obtain RBI approval before any takeover or acquisition resulting in 26% or more of paid-up equity, including progressive purchases over time (para 6(2)).",
+      "Seek approval for any change of control, whether or not it results in share transfer (para 6(1)).",
+      "Report buybacks/capital reductions that push holdings above the thresholds to RBI/NHB within one month even though prior approval is exempt (para 6 provisos).",
+      "HFCs with public deposits must also seek approval when 10% or more equity is acquired by/ transferred to a foreign investor (para 6(3))."
+    ],
+    "other": [
+      "SPDs need RBI approval for any change in shareholding pattern or capital structure (para 6(4)).",
+      "Transactions among promoters require due diligence to ensure fit-and-proper status for incoming shareholders per the Governance Directions.",
+      "Approvals can be conditioned or declined if public interest or depositor interests are at risk."
+    ],
+    "controls": [
+      "Establish share transfer registers and monitoring tools to flag when cumulative acquisitions approach 10%/26%.",
+      "Obtain declarations on sources of funds, background checks, and board resolutions to support approval applications.",
+      "Maintain communication logs with RBI/NHB for audit trails."
+    ],
+    "reporting": [
+      "File approval applications through PRAVAAH with supporting documents (share purchase agreements, KYC, fit-and-proper formats).",
+      "Report any change in foreign shareholding of HFCs within one month along with details of investors.",
+      "Keep supervisors informed of rejected/withdrawn deals if they impact control."
+    ],
+    "thresholds": [
+      "26% shareholding trigger for prior approval; 10% for HFC transfers to foreign investors (para 6).",
+      "Reporting timeline: within one month for post-facto notifications where exemptions apply (para 6 provisos).",
+      "SPDs require approval for any shareholding/capital change regardless of percentage (para 6(4))."
+    ],
+    "deep_dive": "The Acquisition of Shareholding or Control Directions tighten oversight on ownership changes: 26% equity, any control shift, or 10% foreign stakes in deposit-taking HFCs all require RBI\u2019s nod, ensuring only fit-and-proper promoters control NBFCs.",
+    "rcsa": [
+        {"control": "Prior Approval for Acquisition", "risk": "Failure to obtain prior RBI approval for shareholding changes", "frequency": "Per Transaction"},
+        {"control": "Reporting of Shareholding Changes", "risk": "Failure to report shareholding changes to RBI within 30 days", "frequency": "Per Event"},
+        {"control": "Fit-and-Proper Director Check", "risk": "Non-compliance with fit-and-proper director requirements post-transaction", "frequency": "Per Transaction"},
+        {"control": "Acquirer NPA Check", "risk": "Acquisition by an entity with NPAs >5%", "frequency": "Per Transaction"}
+    ]
+  },
+  {
+    "id": "governance",
+    "title": "NBFC \u2013 Governance",
+    "tags": [
+      "governance",
+      "board",
+      "conduct"
+    ],
+    "function": "Codifies board composition, committee structures, senior management accountability and policy architecture for NBFCs across layers.",
+    "actions": [
+      "Constitute Audit, Risk Management, Nomination & Remuneration and Stakeholder Relationship Committees with defined quorum and charter.",
+      "Implement board-approved policies on compliance, whistleblowing, succession planning, compensation and related party transactions.",
+      "Undertake annual board effectiveness reviews and submit compliance certificates to RBI.",
+      "At least one-third of the board must be independent; when the Chair is not independent, at least half of the board has to be independent for Upper Layer NBFCs."
+    ],
+    "other": [
+      "Upper Layer NBFCs face stricter independent director and cooling-off requirements similar to large banks.",
+      "Senior management must sign conduct accountability statements covering risk, compliance and audit actions.",
+      "All NBFCs must align with the Companies Act and SEBI rules when listed, with RBI directions prevailing in case of conflict."
+    ],
+    "controls": [
+      "Run annual board skill gap assessments and update induction/training plans accordingly.",
+      "Rotate key managerial personnel for control functions (compliance, risk, audit) with succession plans.",
+      "Adopt board-approved frameworks for remuneration alignment with risk-adjusted performance."
+    ],
+    "reporting": [
+      "Submit Corporate Governance Returns (CGR) summarising committee meetings, attendance and compliance gaps.",
+      "Disclose independence status, tenure and remuneration of directors in the annual report.",
+      "Maintain a regulatory tracker for all supervisory observations and board decisions tied to remediation."
+    ],
+    "thresholds": [
+      "At least one-third of the board must be independent; when the Chair is not independent, at least half of the board has to be independent for Upper Layer NBFCs.",
+      "Audit Committee minimum three members with two-thirds independent directors; meetings at least once every quarter.",
+      "Chief Compliance Officer must have a minimum rank equivalent to General Manager and a fixed tenure of 3 years."
+    ],
+    "deep_dive": "Upper Layer NBFCs must implement a Directors\u2019 Responsibility Framework similar to large banks\u2014each KMP signs an accountability statement annually. Key board committees (Audit, Risk, Nomination & Remuneration, Stakeholder Relationship) need charter updates every year. Compensation deferral requirements mirror bank rules: minimum 50% of variable pay deferred over 3 years for MRTs with at least 50% delivered in share-linked instruments.",
+    "rcsa": [
+        {"control": "Board Composition Review", "risk": "Non-compliance with independent director requirements", "frequency": "Annual"},
+        {"control": "Audit Committee Meetings", "risk": "Audit Committee not meeting at least once every quarter", "frequency": "Quarterly"},
+        {"control": "CCO Appointment and Tenure", "risk": "Non-compliance with CCO appointment and tenure requirements", "frequency": "Ongoing"},
+        {"control": "Directors’ Responsibility Framework", "risk": "Failure to implement the Directors’ Responsibility Framework for Upper Layer NBFCs", "frequency": "Annual"}
+    ]
+  },
+  {
+    "id": "capital-adequacy",
+    "title": "NBFC \u2013 Prudential Norms on Capital Adequacy",
+    "tags": [
+      "prudential",
+      "capital",
+      "risk"
+    ],
+    "function": "Sets minimum CRAR, Tier 1 and CET1 requirements plus risk-weight/RWA computation rules for NBFCs.",
+    "actions": [
+      "NBFC-ML and above must maintain CRAR \u226515% with Tier 1 \u226510% of RWAs and Tier 2 capped at 100% of Tier 1; UL NBFCs also need CET1 \u22659% (para 6).",
+      "Implement ICAAP (para 54) to stress-test capital sufficiency and align with RWAs from Chapter III.",
+      "Deduct specified items (goodwill, DTAs, investments in own shares, etc.) from CET1/Tier 1 as laid out in Chapter II before reporting capital."
+    ],
+    "other": [
+      "Risk weights for on/off balance sheet items follow detailed tables including higher charges for unrated exposures, securitisation and market risk add-ons (Chapter III).",
+      "Hybrid instruments qualify as Tier 2 within limits; subordinated debt cannot exceed 50% of Tier 1 (paras 97-98).",
+      "Top Layer NBFCs can be subjected to higher bespoke capital charges (para 6(5))."
+    ],
+    "controls": [
+      "Maintain systems to compute RWAs, including credit conversion factors for off-balance-sheet items and securitisation exposures (Chapters III & IV).",
+      "Monitor leverage ratio requirements as prescribed in Chapter II(H).",
+      "Ensure board approves CET1 deductions and capital instruments to avoid breaching qualitative criteria."
+    ],
+    "reporting": [
+      "Submit quarterly capital returns reconciling GAAP capital with regulatory capital after deductions.",
+      "Disclose capital structure, risk-weighted assets and leverage metrics in financial statements per the Financial Statement Directions.",
+      "Provide ICAAP summaries and stress-test results to supervisors on request."
+    ],
+    "thresholds": [
+      "CRAR \u226515%, Tier 1 \u226510% of RWAs for NBFC-ML and above (para 6).",
+      "CET1 \u22659% for NBFC-UL (para 6(4)).",
+      "Tier 2 capital \u2264100% of Tier 1; subordinated debt \u226450% of Tier 1 (paras 6, 97)."
+    ],
+    "deep_dive": "The capital directions marry Basel-style CET1/Tier 1/Tier 2 definitions with NBFC-specific risk weights and leverage norms. NBFC-ML+ must carry 15% CRAR, ULs need 9% CET1, and Top Layer firms face bespoke surcharges, all anchored by ICAAP and disclosure requirements.",
+    "rcsa": [
+        {"control": "CRAR and Tier 1 Monitoring", "risk": "Breach of CRAR and Tier 1 capital requirements", "frequency": "Monthly"},
+        {"control": "Leverage Ratio Monitoring", "risk": "Breach of the leverage ratio cap", "frequency": "Monthly"},
+        {"control": "Capital Deductions Review", "risk": "Incorrect calculation of capital deductions", "frequency": "Quarterly"},
+        {"control": "ICAAP Submission", "risk": "Failure to submit ICAAP or inadequate stress testing", "frequency": "Annual"}
+    ]
+  },
+  {
+    "id": "climate",
+    "title": "NBFC \u2013 Climate Finance & Climate Risk",
+    "tags": [
+      "risk",
+      "sustainability",
+      "governance"
+    ],
+    "function": "Integrates climate-related financial risks into the NBFC risk management stack and encourages transition finance products.",
+    "actions": [
+      "Identify climate-sensitive portfolios, embed metrics into ICAAP/ILAAP and run scenario analyses covering physical and transition risk.",
+      "Disclose board-approved climate strategy, financed emissions approach and taxonomy used for classifying green lending.",
+      "Align product governance so that green or transition finance claims are consistent with disclosures made to customers and investors.",
+      "NBFCs with assets \u2265\u20b950,000 crore must publish climate risk disclosures (governance, strategy, metrics) from FY2025-26; those with \u20b95,000\u201350,000 crore follow from FY2026-27."
+    ],
+    "other": [
+      "Data gaps can be bridged using reasonable proxies but must be disclosed transparently.",
+      "RBI expects integration with existing stress-testing and credit appraisal workflows rather than stand-alone reporting.",
+      "Climate-finance exposures count toward concentration limits; there is no separate carve-out."
+    ],
+    "controls": [
+      "Integrate climate metrics within credit appraisal templates (sector taxonomy, emission profiles, adaptation readiness).",
+      "Establish cross-functional climate risk councils reporting to the board Risk Management Committee.",
+      "Embed climate considerations into product approval processes, especially blended or transition instruments."
+    ],
+    "reporting": [
+      "Publish climate risk disclosures aligned to RBI guidance (governance, strategy, risk management, metrics & targets).",
+      "Maintain internal MIS on financed emissions, physical risk hotspots and scenario results.",
+      "Respond to supervisory information requests on green lending classification, use-of-proceeds and impact measurement."
+    ],
+    "thresholds": [
+      "NBFCs with assets \u2265\u20b950,000 crore must publish climate risk disclosures (governance, strategy, metrics) from FY2025-26; those with \u20b95,000\u201350,000 crore follow from FY2026-27.",
+      "At least one scenario analysis per year covering a 10-year horizon for physical risks and a 15-year horizon for transition risks is mandated for Upper Layer NBFCs.",
+      "Exposure to green or transition finance must be tagged and reported quarterly once it exceeds 5% of the loan book."
+    ],
+    "deep_dive": "Boards must approve taxonomy alignment (e.g., CEA, IFC, internal). Climate KPIs integrate into ICAAP/ILAAP, and action plans must specify data proxies (satellite imagery, sectoral emission factors) with validation cycles not exceeding 2 years. Any product marketed as \u2018green\u2019 should have post-disbursement monitoring of use-of-proceeds; mislabeling invites supervisory scrutiny.",
+    "rcsa": [
+        {"control": "Climate Risk Disclosure", "risk": "Failure to publish climate risk disclosures by the specified dates", "frequency": "Annual"},
+        {"control": "Scenario Analysis", "risk": "Failure to conduct the required scenario analysis", "frequency": "Annual"},
+        {"control": "Green Finance Tagging and Reporting", "risk": "Incorrect tagging or reporting of green finance exposures", "frequency": "Quarterly"},
+        {"control": "Taxonomy Alignment Review", "risk": "Lack of board-approved taxonomy alignment", "frequency": "Annual"}
+    ]
+  },
+  {
+    "id": "credit-risk",
+    "title": "NBFC \u2013 Credit Risk Management",
+    "tags": [
+      "risk",
+      "lending",
+      "governance"
+    ],
+    "function": "Provides the backbone for credit governance, portfolio monitoring and impairment triggers across all NBFC loan books.",
+    "actions": [
+      "Maintain credit policies that cover underwriting, rating migration, collateral management and early warning triggers aligned to each asset class.",
+      "Set limits for unsecured lending, connected exposures and loan-to-value ratios; review at least annually.",
+      "Deploy independent credit risk teams, stress testing and MIS that feed board-level dashboards.",
+      "Obligor-level limits: unsecured personal loans cannot exceed 10% of total assets for Base Layer NBFCs and 5% for Upper Layer entities."
+    ],
+    "other": [
+      "Specific instructions exist for co-lending, gold loans, real estate, capital market exposures and structured obligations.",
+      "Use of credit scoring models must be validated periodically and supplemented with qualitative assessments.",
+      "All deviations from policy thresholds require approval from at least one independent director for Upper Layer entities."
+    ],
+    "controls": [
+      "Deploy portfolio-level early warning systems that aggregate behavioural, bureau and transactional signals.",
+      "Set independent credit sanction grids with maker-checker and deviation logging.",
+      "Review collateral valuation and legal enforceability at least annually for large accounts."
+    ],
+    "reporting": [
+      "Submit Board Credit Committee minutes capturing limit breaches and remedial steps.",
+      "Maintain MIS on sector exposure, top borrower concentrations and watch-list accounts for supervisory inspections.",
+      "Share stress-test and portfolio analytics outcomes with lenders, rating agencies and investors when covenants demand."
+    ],
+    "thresholds": [
+      "Obligor-level limits: unsecured personal loans cannot exceed 10% of total assets for Base Layer NBFCs and 5% for Upper Layer entities.",
+      "All exposures \u2265\u20b95 crore must carry internal ratings updated at least annually; exposures \u2265\u20b9100 crore require semi-annual review.",
+      "Collateral margins: gold loans require minimum 10% haircut; LAP (loan against property) requires 25% haircut when computing cover."
+    ],
+    "deep_dive": "Credit policies need risk-graded sanction grids, independent validation of scorecards, and early-warning triggers that combine bureau alerts, GST slippages, and account behaviour. Watch-list accounts must be placed under \u2018Intensive Monitoring\u2019 with 30/60/90-day action plans. RBI also compels NBFCs to aggregate connected exposure data via LEI and PAN mapping to capture indirect concentration.",
+    "rcsa": [
+        {"control": "Unsecured Loan Limit Monitoring", "risk": "Breach of the unsecured personal loan limit", "frequency": "Monthly"},
+        {"control": "Internal Rating Review", "risk": "Failure to update internal ratings as required", "frequency": "Annual/Semi-Annual"},
+        {"control": "Collateral Margin Maintenance", "risk": "Inadequate collateral margins for gold and LAP loans", "frequency": "Per Loan"},
+        {"control": "Early Warning System Review", "risk": "Ineffective early warning system for credit risk", "frequency": "Quarterly"}
+    ]
+  },
+  {
+    "id": "credit-facilities",
+    "title": "NBFC \u2013 Credit Facilities",
+    "tags": [
+      "lending",
+      "products",
+      "customer"
+    ],
+    "function": "Sets granular norms for various credit facilities including working capital, term loans, guarantees, co-lending and factoring.",
+    "actions": [
+      "Issue sanction letters capturing credit limits, pricing, covenants and security coverage before disbursal.",
+      "Follow end-use verification protocols, especially for sensitive sectors such as capital markets, crypto assets or speculative real estate.",
+      "Maintain Default Loss Guarantee or First Loss Default Guarantee arrangements strictly within RBI caps and ensure co-lenders share risk proportionately.",
+      "Default Loss Guarantee / First Loss Default Guarantee contracts in digital lending capped at 5% of the loan portfolio being guaranteed."
+    ],
+    "other": [
+      "Factoring and invoice discounting exposures must comply with the Factoring Regulation Act registration requirements.",
+      "Digital lending journeys must display annualised pricing, fees and key fact statements as mandated by RBI.",
+      "Bridge loans against shares or promoter funding attract higher margin and monitoring expectations."
+    ],
+    "controls": [
+      "Map each product line to permissible activities and document eligibility criteria, covenants and security coverage.",
+      "Perform end-use verification (invoices, GST data, site visits) especially for high-risk sectors.",
+      "Standardise documentation for co-lending and DLG structures with board-approved exposure caps."
+    ],
+    "reporting": [
+      "Maintain sanction registers with borrower-wise exposure, pricing grids and covenants accessible to audit teams.",
+      "Report co-lending pools, guarantees and first-loss structures in regulatory returns and disclosures.",
+      "Provide customers key fact statements and amortisation schedules digitally for lifetime access."
+    ],
+    "thresholds": [
+      "Default Loss Guarantee / First Loss Default Guarantee contracts in digital lending capped at 5% of the loan portfolio being guaranteed.",
+      "Co-lending arrangements require the bank to hold minimum 90% of each loan on its books with NBFC retaining at least 10%.",
+      "Factoring exposure single debtor limit = 20% of NOF; overall factoring assets must stay within 50% of total assets unless the NBFC is registered as NBFC-Factor."
+    ],
+    "deep_dive": "Sanction letters must quote APR, processing fees, penal charges and cooling-off periods. End-use verification is mandatory for exposures above \u20b950 lakh through invoices/GST data; for priority sectors like agri, disbursements should go directly to vendors. For structured obligations, NBFCs must ensure covenants like DSCR \u22651.2x before allowing dividend upstreaming.",
+    "rcsa": [
+        {"control": "DLG/FLDG Cap Monitoring", "risk": "Breach of the 5% cap on DLG/FLDG contracts", "frequency": "Monthly"},
+        {"control": "Co-lending Risk Sharing", "risk": "Non-compliance with the 80/20 risk sharing in co-lending", "frequency": "Per Loan"},
+        {"control": "Factoring Exposure Limit", "risk": "Breach of the single debtor or overall factoring asset limits", "frequency": "Quarterly"},
+        {"control": "APR and KFS Issuance", "risk": "Failure to issue KFS or incorrect APR calculation", "frequency": "Per Loan"}
+    ]
+  },
+  {
+    "id": "concentration-risk",
+    "title": "NBFC \u2013 Concentration Risk Management",
+    "tags": [
+      "risk",
+      "prudential",
+      "capital"
+    ],
+    "function": "Caps exposure to single borrowers, groups and sensitive sectors to avoid build-up of correlated credit risk.",
+    "actions": [
+      "Adhere to single-borrower exposure limits of 20 percent of Tier I capital (25 percent for infrastructure) and group limits of 30 percent (35 percent for infrastructure).",
+      "Upper Layer NBFCs must also monitor combined exposures (funded plus non-funded) at consolidated level.",
+      "Establish stress-tests and contingency plans for breaching thresholds, including immediate board escalation.",
+      "Single borrower exposure capped at 20% of Tier I capital (25% for infrastructure); group exposure capped at 30% (35% for infrastructure)."
+    ],
+    "other": [
+      "Exposure definitions include investments, off-balance sheet items, guarantees and underwriting commitments.",
+      "Exemptions exist for sovereign exposures and certain refinance lines, but they must still be reported.",
+      "Haircuts for collateral are prescribed when computing net exposure for limit compliance."
+    ],
+    "controls": [
+      "Embed automated exposure aggregation across funded, non-funded and investment positions at borrower/group level.",
+      "Set tighter internal limits (e.g., 80 percent of RBI cap) with approval hierarchy for overrides.",
+      "Periodically stress correlated sectors (real estate, NBFCs, commodities) and recalibrate caps."
+    ],
+    "reporting": [
+      "Include single/group borrower exposures and sector caps in quarterly board packs.",
+      "Disclose concentration levels in financial statements with comparison against policy limits.",
+      "Notify RBI when exposures breach prudential limits even temporarily, detailing cure actions."
+    ],
+    "thresholds": [
+      "Single borrower exposure capped at 20% of Tier I capital (25% for infrastructure); group exposure capped at 30% (35% for infrastructure).",
+      "Board-approved internal limits must be set for capital market and other sensitive sector exposures; monitor single-name and sectoral concentrations against policy.",
+      "Exposure to commercial real estate limited to 10% of total assets for Base Layer and 15% for Middle/Upper Layer NBFCs."
+    ],
+    "deep_dive": "Limits apply on both standalone and consolidated basis, and off-balance-sheet exposures count at their credit conversion factors. RBI expects breach escalations within 3 working days with board ratification in the next meeting. Linkages to stress testing are mandatory so that parameter shifts (e.g., 30% fall in property prices) feed directly into capital impact charts.",
+    "rcsa": [
+        {"control": "Borrower/Group Exposure Monitoring", "risk": "Breach of single borrower or group exposure limits", "frequency": "Monthly"},
+        {"control": "Capital Market Exposure Monitoring", "risk": "Breach of capital market exposure limits", "frequency": "Monthly"},
+        {"control": "Commercial Real Estate Exposure Monitoring", "risk": "Breach of commercial real estate exposure limits", "frequency": "Quarterly"},
+        {"control": "Breach Escalation", "risk": "Failure to escalate breaches within 3 working days", "frequency": "Per Event"}
+    ]
+  },
+  {
+    "id": "tdr",
+    "title": "NBFC \u2013 Transfer & Distribution of Credit Risk",
+    "tags": [
+      "risk",
+      "markets",
+      "lending"
+    ],
+    "function": "Guides loan transfers, participation arrangements and synthetic structures that reallocate credit risk without full securitisation.",
+    "actions": [
+      "Obtain board approval for every annual Transfer of Loan Exposures policy covering eligible assets, minimum seasoning and counterparty due diligence.",
+      "Ensure consideration is received upfront, credit risk is transferred irrevocably and servicing responsibilities are documented.",
+      "Report all transactions, including Direct Assignment and loan participation, in prescribed returns.",
+      "Minimum Holding Period (MHP): 3 months for microfinance, 6 months for consumer/SME loans, 12 months for commercial real estate loans before transfer."
+    ],
+    "other": [
+      "Upper Layer NBFCs must maintain detailed MIS on retention of economic interest (5 percent minimum unless exempt).",
+      "Synthetic risk transfers such as credit default swaps require explicit RBI permission.",
+      "Borrower consent and KYC obligations continue even after transfer; customer service cannot be compromised."
+    ],
+    "controls": [
+      "Maintain product notes distinguishing Direct Assignment, securitisation, participation and synthetic transfer structures.",
+      "Ensure legal true-sale opinions and borrower consent templates are standardised and archived.",
+      "Track Minimum Retention Requirement (MRR) and seasoning status at pool level before execution."
+    ],
+    "reporting": [
+      "File loan transfer transaction details through the revised RBI reporting template within 15 days of execution.",
+      "Disclose outstanding retained interests, credit enhancements and servicing fees in investor communications.",
+      "Maintain MIS on counterparty performance, recourse clauses and default behaviour post-transfer."
+    ],
+    "thresholds": [
+      "Minimum Holding Period (MHP): 3 months for microfinance, 6 months for consumer/SME loans, 12 months for commercial real estate loans before transfer.",
+      "Minimum Retention Requirement (MRR) set at 5% of the loan pool (10% when original maturity exceeds 24 months).",
+      "Each transfer transaction above \u20b9500 crore must be reported to RBI within 15 days using the prescribed return."
+    ],
+    "deep_dive": "Transfer of Loan Exposures Directions force NBFCs to demonstrate true sale (no material economic interest retained beyond the MRR, no clean-up calls before 90% amortisation). Synthetic risk transfers need explicit RBI approval with credit default swap documentation aligned to ISDA. Borrowers must be intimated within 30 days of transfer, and servicing responsibilities need STP (straight-through) tracking dashboards.",
+    "rcsa": [
+        {"control": "MHP Compliance", "risk": "Transfer of loans before the completion of the MHP", "frequency": "Per Transaction"},
+        {"control": "MRR Compliance", "risk": "Failure to maintain the MRR for transferred loan pools", "frequency": "Per Transaction"},
+        {"control": "Transaction Reporting", "risk": "Failure to report large transfer transactions to RBI within 15 days", "frequency": "Per Transaction"},
+        {"control": "True Sale Criteria Check", "risk": "Non-compliance with true sale criteria", "frequency": "Per Transaction"}
+    ]
+  },
+  {
+    "id": "securitisation",
+    "title": "NBFC \u2013 Securitisation Transactions",
+    "tags": [
+      "markets",
+      "risk",
+      "capital"
+    ],
+    "function": "Lays out true sale criteria, Minimum Retention Requirement (MRR), Minimum Holding Period (MHP) and credit enhancement rules for securitising NBFC loans.",
+    "actions": [
+      "Satisfy MHP before pooling (3, 6 or 12 months depending on asset class) and retain MRR of at least 5 percent in the securitisation vehicle.",
+      "Structure servicing agreements, cash waterfalls and credit enhancements that are fully disclosed to investors.",
+      "Recognise gain on sale only when significant risk transfer occurs and interest-only strips are capped.",
+      "MRR of 5% for amortising pools and 10% for revolving structures; mezzanine tranches cannot exceed 20% of total credit enhancement."
+    ],
+    "other": [
+      "Securitisation of exposures with residual maturity below 24 months has additional constraints unless fully amortising.",
+      "Originators cannot re-purchase exposures except in permitted clean-up calls.",
+      "Resetting pooling structures or granting implicit support attracts capital deductions and penalties."
+    ],
+    "controls": [
+      "Run pool selection filters (DSO, seasoning, minimum obligor count) automatically before structuring deals.",
+      "Document cash-flow waterfalls, trigger events and swap arrangements with scenario testing.",
+      "Appoint independent trustees and perform periodic asset audits of securitised pools."
+    ],
+    "reporting": [
+      "Disclose securitisation volumes, retained interests and credit enhancement utilisation in financials.",
+      "Submit monthly investor reports covering pool performance, delinquencies and trigger status.",
+      "Inform RBI of any invocation of clean-up calls or instances of implicit support."
+    ],
+    "thresholds": [
+      "MRR of 5% for amortising pools and 10% for revolving structures; mezzanine tranches cannot exceed 20% of total credit enhancement.",
+      "Interest-only strips capped at 50% of the total credit enhancement and have to be deducted from Tier I capital 100%.",
+      "Clean-up call can be exercised only after 90% of the outstanding pool is amortised and cannot result in yield improvement."
+    ],
+    "deep_dive": "Securitisation pools must conform to MHP rules identical to loan transfers. Originators must disclose waterfall structures, stress test assumptions (e.g., 30% default, 50% recovery), and the names of rating agencies to all investors. Implicit support\u2014buying back bad pools or restructuring credit enhancements\u2014results in capital deduction equal to the support provided plus penalties.",
+    "rcsa": [
+        {"control": "MRR Compliance", "risk": "Failure to maintain the MRR for securitised pools", "frequency": "Per Transaction"},
+        {"control": "Credit Enhancement Limit", "risk": "Breach of the 20% limit for mezzanine tranches", "frequency": "Per Transaction"},
+        {"control": "Interest-Only Strip Treatment", "risk": "Incorrect accounting for interest-only strips", "frequency": "Per Transaction"},
+        {"control": "Clean-up Call Conditions", "risk": "Exercising clean-up calls before 90% amortisation", "frequency": "Per Transaction"}
+    ]
+  },
+  {
+    "id": "irac",
+    "title": "NBFC \u2013 Income Recognition, Asset Classification & Provisioning",
+    "tags": [
+      "prudential",
+      "accounting",
+      "risk"
+    ],
+    "function": "Aligns NBFC asset classification with banks, mandating 90-day NPA norms, stage-based provisioning and daily stamping of SMA buckets.",
+    "actions": [
+      "Tag loans as SMA-0/1/2 based on days past due, and automatically downgrade to NPA at 90 DPD for all asset classes except gold loans (120 DPD).",
+      "Implement board-approved provisioning policies covering standard asset provisions, additional provisioning for stressed sectors and accelerated provisioning for fraud accounts.",
+      "Reverse income on NPAs until full recovery and maintain borrower-wise classification across facilities.",
+      "SMA-1 recognition at 31 DPD, SMA-2 at 61 DPD, NPA tagging at 90 DPD for all assets except gold loans (120 DPD) and loans to MFIs where 60 DPD trigger applies for SMA-2."
+    ],
+    "other": [
+      "Loans with multiple repayment structures, including EMIs with moratorium, must be evaluated using day-count methods prescribed by RBI.",
+      "Rescheduled or restructured accounts remain in Stage 3 until satisfactory performance for the specified period.",
+      "Provisioning coverage must be disclosed in notes to accounts and reconciled with auditor confirmations."
+    ],
+    "controls": [
+      "Automate DPD tagging with daily MIS feeds from CBS and LOS platforms.",
+      "Align restructuring, write-off and upgrade approvals with RBI timelines and cooling-off requirements.",
+      "Classify borrower accounts holistically so all facilities move synchronously when SMA/NPA triggered."
+    ],
+    "reporting": [
+      "Submit CRILC and supervisory returns reflecting SMA buckets, restructures and fraud accounts.",
+      "Disclose ageing of NPAs, movement across stages and provisioning coverage ratios in financial statements.",
+      "Provide auditors borrower-wise classification evidence during annual audits."
+    ],
+    "thresholds": [
+      "SMA-1 recognition at 31 DPD, SMA-2 at 61 DPD, NPA tagging at 90 DPD for all assets except gold loans (120 DPD) and loans to MFIs where 60 DPD trigger applies for SMA-2.",
+      "Upgrades from NPA to standard status require clearance of all arrears and one full cycle of timely payment (generally 3 EMI cycles).",
+      "Provisioning: standard assets 0.4% (1% for commercial real estate); sub-standard assets 15%, secured doubtful assets 25\u2013100% based on ageing, unsecured exposures 100%."
+    ],
+    "deep_dive": "Borrower-wise classification is compulsory\u2014if any facility slips, all exposures move to the lowest category. Daily stamping is mandated for automated systems, and partial payments must first service interest before principal. Income on NPAs can be recognised only on actual receipt, and RBI wants quarterly board reviews of SMA/NPA migration along with recovery buckets.",
+    "rcsa": [
+        {"control": "DPD and NPA Tagging", "risk": "Incorrect or delayed tagging of SMA/NPA accounts", "frequency": "Daily"},
+        {"control": "NPA Upgrade Process", "risk": "Incorrect upgrade of NPA accounts to standard status", "frequency": "Per Event"},
+        {"control": "Provisioning Calculation", "risk": "Incorrect calculation of provisions for different asset classes", "frequency": "Quarterly"},
+        {"control": "Board Review of Asset Quality", "risk": "Failure to conduct quarterly board reviews of SMA/NPA migration", "frequency": "Quarterly"}
+    ]
+  },
+  {
+    "id": "resolution",
+    "title": "NBFC \u2013 Resolution of Stressed Assets",
+    "tags": [
+      "risk",
+      "recovery",
+      "governance"
+    ],
+    "function": "Provides the common resolution pathway for accounts above INR 100 crore, aligning NBFC processes with the Prudential Framework for Resolution of Stressed Assets.",
+    "actions": [
+      "Constitute a Committee of Lenders (or participate when consortium lending) and sign Inter-Creditor Agreements within 30 days of default.",
+      "Submit resolution plans with viability metrics, independent credit evaluation and provisioning as per timelines.",
+      "Disclose aggregate restructured accounts quarterly and maintain borrower-level MIS for regulatory onsite reviews.",
+      "Accounts with aggregate exposure \u2265\u20b9100 crore fall under the Prudential Framework; lenders must form the review committee within 30 days of default and implement a resolution plan within 180 days thereafter."
+    ],
+    "other": [
+      "Delay in implementation attracts additional provisioning (15 to 35 percent) until plan is invoked and completed.",
+      "Wilful defaulter and fraud accounts are ineligible for certain relief measures.",
+      "Resolutions implemented outside ICA must still meet the Prudential Framework benchmarks."
+    ],
+    "controls": [
+      "Constitute empowered committees with representation from credit, risk, legal and operations to vet resolution plans.",
+      "Track 30-day review, 180-day implementation and independent credit evaluation milestones for each stressed account.",
+      "Embed hair-cut approval matrix and viability benchmarks (DSCR, IRR, equity infusion) aligned to RBI framework."
+    ],
+    "reporting": [
+      "Update CRILC with restructuring or default status within mandated timelines.",
+      "Make quarterly disclosures on restructured exposure, provisioning and management overlays.",
+      "Document ICA deliberations, dissent notes and voting outcomes for supervisory scrutiny."
+    ],
+    "thresholds": [
+      "Accounts with aggregate exposure \u2265\u20b9100 crore fall under the Prudential Framework; lenders must form the review committee within 30 days of default and implement a resolution plan within 180 days thereafter.",
+      "Additional provisioning of 20% is imposed if the plan is not implemented within 180 days; a further 15% is required after 365 days.",
+      "Resolution plans above \u20b9500 crore need an Independent Credit Evaluation (ICE) with at least RP4 grade."
+    ],
+    "deep_dive": "Inter-Creditor Agreements must be signed by lenders holding at least 75% of debt by value and 60% by number. Viability metrics (DSCR \u2265 1.2, IRR above hurdle) and promoter contribution thresholds are pre-set; shortfalls must be funded upfront. Concessions to wilful defaulters or fraud accounts are barred, and any change in ownership route requires new management with <10% NPA track record.",
+    "rcsa": [
+        {"control": "Resolution Plan Timeline", "risk": "Failure to implement a resolution plan within 180 days", "frequency": "Per Case"},
+        {"control": "Additional Provisioning", "risk": "Failure to make additional provisions for delayed resolution plans", "frequency": "Per Case"},
+        {"control": "ICE for Large Exposures", "risk": "Failure to obtain ICE for resolution plans above Rs.500 crore", "frequency": "Per Case"},
+        {"control": "Inter-Creditor Agreement", "risk": "Failure to sign the ICA within the specified timeline", "frequency": "Per Case"}
+    ]
+  },
+  {
+    "id": "wilful-defaulters",
+    "title": "NBFC \u2013 Treatment of Wilful & Large Defaulters",
+    "tags": [
+      "risk",
+      "recovery",
+      "customer"
+    ],
+    "function": "Defines criteria for tagging borrowers as wilful defaulters or large defaulters and outlines consequential restrictions.",
+    "actions": [
+      "Establish Identification Committees to examine evidence of diversion, siphoning or capacity-to-pay before classifying accounts.",
+      "Report names to CRILC/CICs within 30 days, share information with lenders and avoid granting additional facilities to such borrowers or connected entities.",
+      "Implement legal follow-up, including recall of facilities, debarring from promoter positions and seeking criminal action where appropriate.",
+      "Exposure threshold of \u20b925 lakh for classifying a borrower as a wilful defaulter; \u20b91 crore aggregate exposure threshold for tagging as a large defaulter."
+    ],
+    "other": [
+      "Borrowers can appeal to a Review Committee but classification remains unless overturned.",
+      "Threshold for large defaulter tagging is INR 1 crore of aggregate exposure.",
+      "Third-party guarantees invoked and remaining unpaid can trigger guarantor classification as wilful defaulter."
+    ],
+    "controls": [
+      "Maintain SOPs for evidence collection (bank statements, forensic reviews, stock audits) prior to classification.",
+      "Ensure Identification and Review Committees comprise independent directors and compliance officers.",
+      "Synchronise borrower and guarantor classification decisions with consortium lenders."
+    ],
+    "reporting": [
+      "File wilful defaulter lists with CRILC/CICs and update lending systems to block further disbursements.",
+      "Communicate classification decisions to borrowers with detailed reasoning and appeal timelines.",
+      "Report legal actions initiated (SARFAESI, civil, criminal) in board recovery updates."
+    ],
+    "thresholds": [
+      "Exposure threshold of \u20b925 lakh for classifying a borrower as a wilful defaulter; \u20b91 crore aggregate exposure threshold for tagging as a large defaulter.",
+      "Identification Committee must decide within 6 months of detecting diversion; Review Committee has to dispose appeals within 45 days.",
+      "Names of wilful defaulters must be reported to CRILC/CICs within 30 days and published on the NBFC\u2019s website for exposures \u2265\u20b950 crore."
+    ],
+    "deep_dive": "Evidence standards cover diversion of funds, siphoning, removal of securities or deliberate non-payment despite capacity. Connected parties\u2014directors, guarantors\u2014are co-opted if they benefited from the malfeasance. Sanctions include denial of further credit, bar on institutional finance for ventures promoted by the defaulter, and ineligibility to be a director in any financial sector entity.",
+    "rcsa": [
+        {"control": "Wilful Defaulter Identification", "risk": "Incorrect or delayed identification of wilful defaulters", "frequency": "Ongoing"},
+        {"control": "Committee Timelines", "risk": "Failure of the Identification or Review Committee to meet timelines", "frequency": "Per Case"},
+        {"control": "Reporting to CRILC/CICs", "risk": "Failure to report wilful defaulters to CRILC/CICs within 30 days", "frequency": "Per Case"},
+        {"control": "Publication of Defaulter List", "risk": "Failure to publish the list of large defaulters on the website", "frequency": "Ongoing"}
+    ]
+  },
+  {
+    "id": "investment-portfolio",
+    "title": "NBFC \u2013 Investment Portfolio",
+    "tags": [
+      "markets",
+      "accounting",
+      "risk"
+    ],
+    "function": "Standardises classification (HTM, AFS, HFT), valuation and audit of NBFC investment books, including subsidiaries and joint ventures.",
+    "actions": [
+      "Mark-to-market AFS/HFT securities at least monthly using independent price sources and recognise depreciation immediately.",
+      "Limit HTM to the ceiling prescribed (typically 25 percent) and obtain board approval for transfers across categories.",
+      "Document valuation methodologies for unquoted shares, preference shares and security receipts, with auditor review.",
+      "Held-To-Maturity (HTM) investments capped at 25% of total investments; transfers from HTM to AFS/HFT allowed only once per year with RBI approval."
+    ],
+    "other": [
+      "Equity investments in subsidiaries are exempt from MTM but require impairment testing.",
+      "Illiquid investments demand higher provisioning or haircuts when computing capital adequacy.",
+      "Disclosures must detail issuer-wise exposure, duration and valuation hierarchy."
+    ],
+    "controls": [
+      "Maintain security master data with ISIN-level classification (HTM/AFS/HFT) and limit transfers between buckets.",
+      "Perform price validation using multiple sources; manual overrides require treasury head approval.",
+      "Review impairment/valuation policies annually with auditor concurrence."
+    ],
+    "reporting": [
+        "Disclose category-wise book value, market value and depreciation/appreciation in financial statements.",
+        "File investment concentration details with RBI when exposures exceed internal limits.",
+        "Provide audit committees quarterly updates on valuation exceptions and portfolio churn."
+    ],
+    "thresholds": [
+        "Held-To-Maturity (HTM) investments capped at 25% of total investments; transfers from HTM to AFS/HFT allowed only once per year with RBI approval.",
+        "Unquoted equity must be valued at cost or break-up value, whichever is lower; unquoted preference shares valued at discounted cash flows with minimum 10% discount rate.",
+        "Single issuer exposure in the investment book capped at 15% of owned funds; group exposure at 25%."
+    ],
+    "deep_dive": "NBFCs must have board-approved valuation policies, independent price sources (FIMMDA, FBIL) for SLR securities, and monthly MTM for AFS/HFT categories. Unrealised gains cannot be used for dividend distribution. Any strategic investment >10% in another financial entity requires RBI nod and attracts additional capital deduction.",
+    "rcsa": [
+        {"control": "HTM Limit Monitoring", "risk": "Breach of the 25% HTM investment cap", "frequency": "Monthly"},
+        {"control": "Valuation of Unquoted Equity", "risk": "Incorrect valuation of unquoted equity and preference shares", "frequency": "Quarterly"},
+        {"control": "Issuer Exposure Monitoring", "risk": "Breach of single/group issuer exposure limits", "frequency": "Monthly"},
+        {"control": "MTM for AFS/HFT", "risk": "Failure to conduct monthly MTM for AFS/HFT securities", "frequency": "Monthly"}
+    ]
+  },
+  {
+    "id": "alm",
+    "title": "NBFC \u2013 Asset Liability Management",
+    "tags": [
+      "liquidity",
+      "risk",
+      "governance"
+    ],
+    "function": "Mandates structural liquidity statements, dynamic liquidity management and interest rate risk monitoring across time buckets.",
+    "actions": [
+      "Prepare granular maturity ladders (1-7 days, 8-14, 15-30, etc.) and ensure cumulative negative mismatches stay within RBI tolerance.",
+      "Constitute an ALCO that meets monthly, sets funding mix targets and reviews stress scenarios.",
+      "Maintain high-quality liquid assets for potential Liquidity Coverage Ratio requirements applicable to Upper Layer NBFCs.",
+      "Negative cumulative mismatch limits: not more than 10% in the 1\u20137 day bucket, 15% in 8\u201314 days, and 20% in 15\u201330 days for NBFCs with assets \u2265\u20b95,000 crore."
+    ],
+    "other": [
+      "Derivative positions must be captured in gap statements using cash-flow equivalents.",
+      "Early warning indicators include rising cost of funds, roll-over dependence and off-balance sheet exposures.",
+      "ALM disclosures are required semi-annually in public domain for large NBFCs."
+    ],
+    "controls": [
+      "Generate daily structural liquidity statements for critical buckets (<30 days) when in Upper Layer.",
+      "Set behavioural assumptions (prepayments, roll-offs) approved by ALCO and validate quarterly.",
+      "Link FTP/fund transfer pricing to liquidity costs to influence business line behaviour."
+    ],
+    "reporting": [
+      "Submit quarterly ALM returns (ALM-1/2/3) and LCR reports where applicable.",
+      "Publish liquidity gap disclosures semi-annually in public domain for large NBFCs.",
+      "Escalate breaches of cumulative mismatch limits to RBI within 15 days with mitigation."
+    ],
+    "thresholds": [
+      "Negative cumulative mismatch limits: not more than 10% in the 1\u20137 day bucket, 15% in 8\u201314 days, and 20% in 15\u201330 days for NBFCs with assets \u2265\u20b95,000 crore.",
+      "Liquidity Coverage Ratio (LCR) must reach 100% by 1 December 2025 for NBFC-UL/ML with assets \u2265\u20b910,000 crore (50% from December 2024).",
+      "Interest rate risk in the banking book (IRRBB) must be measured using \u0394EVE and \u0394NII with 200 bps shock; board tolerance usually \u00b115% of Tier I capital."
+    ],
+    "deep_dive": "ALCO meetings at least monthly (weekly during stress) must review funding concentration\u2014no single lender beyond 15% of borrowings. Behavioural assumptions (prepayments, roll-overs) need back-testing quarterly. FTP curves should reward liability franchises and penalise mismatches. NBFCs with high reliance on short-term CP must maintain contingency funding plans detailing at least three stress scenarios.",
+    "rcsa": [
+        {"control": "Mismatch Limit Monitoring", "risk": "Breach of negative cumulative mismatch limits", "frequency": "Daily"},
+        {"control": "LCR Maintenance", "risk": "Shortfall in LCR maintenance", "frequency": "Daily"},
+        {"control": "IRRBB Measurement", "risk": "Incorrect measurement of IRRBB", "frequency": "Quarterly"},
+        {"control": "ALCO Meetings", "risk": "ALCO meetings not held at least monthly", "frequency": "Monthly"}
+    ]
+  },
+  {
+    "id": "outsourcing",
+    "title": "NBFC \u2013 Managing Risks in Outsourcing",
+    "tags": [
+      "operations",
+      "risk",
+      "technology"
+    ],
+    "function": "Covers life-cycle governance for outsourcing partners, ensuring customer interest and data security are not compromised.",
+    "actions": [
+      "Maintain an outsourcing policy approved by the board, detailing due diligence, contract clauses, performance monitoring and exit plans.",
+      "Register all critical service providers, map sub-contracting chains and obtain RBI approval where mandated (e.g., customer interface outsourcing).",
+      "Ensure access for RBI supervisors to outsourced premises and records, and embed data localisation/security clauses.",
+      "Critical outsourcing is defined as services accounting for \u226510% of total operating cost or impacting 5% of customers; such contracts need prior board approval."
+    ],
+    "other": [
+      "Ultimate responsibility rests with the NBFC; outsourcing cannot be used to dilute accountability.",
+      "Customer-facing outsourcing requires explicit disclosure and grievance escalation paths.",
+      "Vendor risk must be part of ICAAP and operational risk capital assessments."
+    ],
+    "controls": [
+      "Maintain an outsourcing register capturing scope, data access, sub-contracting, and criticality ratings.",
+      "Ensure contracts embed audit rights, confidentiality, exit clauses and RBI access requirements.",
+      "Subject high-risk vendors to periodic onsite reviews and resilience testing."
+    ],
+    "reporting": [
+      "Present quarterly outsourcing risk dashboards to the board's Risk Management Committee.",
+      "Notify RBI of any material service disruption, data leak or vendor breach within 72 hours.",
+      "Disclose outsourced activities to customers wherever they interact with third parties."
+    ],
+    "thresholds": [
+      "Critical outsourcing is defined as services accounting for \u226510% of total operating cost or impacting 5% of customers; such contracts need prior board approval.",
+      "Vendor concentration: exposure to a single service provider cannot exceed 30% of total outsourced spend without a contingency plan.",
+      "Material incidents (data breach, downtime >4 hours) must be reported to RBI within 72 hours."
+    ],
+    "deep_dive": "Outsourcing registers must capture sub-contracting chains, location of data, escrow of source code and exit plans. Contracts must provide RBI audit access, data localisation clauses, and timelines for returning/destroying customer data. Field collection agents require police verification and refresher training every year; mis-selling by outsourced partners is treated as NBFC\u2019s own action for supervisory penalties.",
+    "rcsa": [
+        {"control": "Critical Outsourcing Approval", "risk": "Failure to obtain prior board approval for critical outsourcing", "frequency": "Per Contract"},
+        {"control": "Vendor Concentration Monitoring", "risk": "Breach of the 30% vendor concentration limit", "frequency": "Quarterly"},
+        {"control": "Incident Reporting", "risk": "Failure to report material incidents to RBI within 72 hours", "frequency": "Per Incident"},
+        {"control": "Outsourcing Register Maintenance", "risk": "Incomplete or inaccurate outsourcing register", "frequency": "Ongoing"}
+    ]
+  },
+  {
+    "id": "financial-statements",
+    "title": "NBFC \u2013 Financial Statements & Disclosures",
+    "tags": [
+      "reporting",
+      "governance",
+      "accounting"
+    ],
+    "function": "Specifies formats, schedules and qualitative disclosures for NBFC financial statements and regulatory returns.",
+    "actions": [
+      "Adopt Ind AS-based templates prescribed by RBI, including balance sheet, profit and loss and cash flow schedules tailored to NBFC activities.",
+      "Disclose maturity pattern, sectoral exposures, top borrowers, concentration metrics and provisioning coverage in notes to accounts.",
+      "File statutory returns (NBS-1/2/4 etc.) electronically within timelines, ensuring auditor validation for select schedules.",
+      "Ind AS-compliant balance sheet, P&L and cash flow must follow RBI templates; NBFCs with assets \u2265\u20b9500 crore must publish Pillar 3-style risk tables."
+    ],
+    "other": [
+      "Any qualification by auditors must be reported to RBI with remediation plans.",
+      "Upper Layer NBFCs must publish Pillar 3-style disclosures on risk and capital.",
+      "Comparatives must be restated when policy changes affect measurement."
+    ],
+    "controls": [
+      "Align chart of accounts with Ind AS, ensuring automations feed regulatory schedules without manual adjustment.",
+      "Apply maker-checker for disclosure tables (ALM, sector exposure, provisioning) with audit trails.",
+      "Rotate statutory auditors per RBI tenure norms and obtain management representation letters for key estimates."
+    ],
+    "reporting": [
+      "File NBS returns electronically with automated validation checks before submission.",
+      "Publish detailed notes on risk exposures, related parties and off-balance sheet items as mandated.",
+      "Provide RBI with reconciliations between regulatory and statutory numbers during inspections."
+    ],
+    "thresholds": [
+      "Ind AS-compliant balance sheet, P&L and cash flow must follow RBI templates; NBFCs with assets \u2265\u20b9500 crore must publish Pillar 3-style risk tables.",
+      "Statutory reserves: minimum 20% of profit to be transferred before dividend declaration as per RBI Act.",
+      "Regulatory returns (NBS-1/2/4) due within 30 days of quarter-end; audited financials must be uploaded within 60 days of financial year end."
+    ],
+    "deep_dive": "Disclosure annexures now include ageing of Stage 2/3 assets, SMA movement, sectoral exposures, liquidity gaps, concentration metrics, related-party transactions and CSR spends. NBFCs must reconcile regulatory and Ind AS numbers (e.g., ECL vs. prudential provisions) and obtain statutory auditor certificates on such reconciliations. Auditor rotation follows RBI\u2019s 3+3 year rule with 6-year cooling-off.",
+    "rcsa": [
+        {"control": "Financial Statement Compliance", "risk": "Non-compliance with RBI templates for financial statements", "frequency": "Annual"},
+        {"control": "Statutory Reserve Transfer", "risk": "Failure to transfer 20% of profit to the statutory reserve", "frequency": "Annual"},
+        {"control": "Regulatory Return Filing", "risk": "Delay in filing of regulatory returns", "frequency": "Quarterly"},
+        {"control": "Pillar 3 Disclosures", "risk": "Failure to publish Pillar 3 disclosures for NBFCs with assets ≥₹500 crore", "frequency": "Annual"}
+    ]
+  },
+  {
+    "id": "dividend",
+    "title": "NBFC \u2013 Declaration of Dividends",
+    "tags": [
+      "capital",
+      "governance",
+      "shareholder"
+    ],
+    "function": "Aligns dividend payouts with prudential soundness so that capital buffers are not diluted.",
+    "actions": [
+      "Apply the 2025 table: if capital and NPA norms are met for the last 3 years, payout ceiling is 50%; if only the current year meets norms, cap is 10%.",
+      "Document a 3-year compliance check (capital ratios, NNPA thresholds, provisioning sufficiency) before recommending any dividend.",
+      "Block payouts automatically if under corrective action, with negative net worth, or provisioning shortfall; preference dividends are part of the cap.",
+      "Obtain board certification that post-dividend capital remains compliant and provisioning is fully met."
+    ],
+    "other": [
+      "Breaches in subsequent quarters require retention of profits until buffers are restored.",
+      "Preference dividends are subject to the same prudential filters.",
+      "Disclosures on dividend history and compliance with policy are required in annual reports."
+    ],
+    "controls": [
+      "Link dividend policy triggers to CRAR, leverage, and net NPA ratios; block pay-out proposals if metrics deteriorate.",
+      "Maintain board minutes evidencing evaluation of capital plans before recommending dividends.",
+      "Integrate stress-test outcomes so extraordinary dividends require shareholder and RBI comfort."
+    ],
+    "reporting": [
+      "Disclose dividend payout ratios, compliance with RBI filters, and reasons for deviations in annual reports.",
+      "Seek prior RBI nod if proposing dividends while under corrective action or restructuring.",
+      "Report dividend decisions to stock exchanges, trustees and major lenders promptly."
+    ],
+    "thresholds": [
+      "Eligible NBFCs (meeting capital and NPA norms for 3 years) have a 50% payout ceiling; others meeting current-year norms are capped at 10%.",
+      "NBFCs under any corrective action, having negative net worth, or with provisioning shortfall cannot declare dividends.",
+      "Preference dividends count toward the payout ratio and must be serviced before equity dividends."
+    ],
+    "deep_dive": "Boards must record capital position (CRAR, Tier I, leverage), provisioning coverage and stress-test outcomes before recommending payout. Post-dividend CRAR must stay \u226515%, and RBI may require prior approval when the NBFC has outstanding special regulatory dispensation. Disclosures include last three years\u2019 payout ratios and justification for any deviation from policy.",
+    "rcsa": [
+        {"control": "Dividend Payout Ratio Check", "risk": "Breach of the dividend payout ratio cap", "frequency": "Annual"},
+        {"control": "Eligibility for Dividend Declaration", "risk": "Declaration of dividend when ineligible", "frequency": "Annual"},
+        {"control": "Post-Dividend CRAR Check", "risk": "CRAR falling below 15% post-dividend", "frequency": "Annual"},
+        {"control": "Board Certification", "risk": "Failure to obtain board certification on provisioning coverage", "frequency": "Annual"}
+    ]
+  },
+  {
+    "id": "credit-info-reporting",
+    "title": "NBFC \u2013 Credit Information Reporting",
+    "tags": [
+      "data",
+      "reporting",
+      "risk"
+    ],
+    "function": "Mandates membership of all Credit Information Companies (CICs) and lays down timelines for furnishing borrower data.",
+    "actions": [
+      "Report borrower data (including retail, SME and co-lending exposures) to all CICs at least monthly, with near-real-time reporting for high-ticket loans.",
+      "Establish processes for timely correction of disputes raised by borrowers through CICs.",
+      "Protect CIC data by using secure APIs and restricting internal access on a need-to-know basis.",
+      "Membership in all four CICs (TransUnion CIBIL, Equifax, Experian, CRIF) is mandatory; data must be furnished at least monthly, and exposures \u2265\u20b95 crore reported to CRILC on a weekly basis."
+    ],
+    "other": [
+      "Non-reporting or inaccurate reporting attracts monetary penalties and supervisory action.",
+      "Membership fees and data-sharing agreements must be kept current for all CICs.",
+      "Borrower consent requirements align with the Credit Information Companies (Regulation) Act."
+    ],
+    "controls": [
+      "Automate daily/weekly bureau file generation with validation for identification fields and repayment data.",
+      "Implement dispute management workflows to resolve borrower complaints within 30 days.",
+      "Restrict access to bureau data via role-based controls and maintain audit logs."
+    ],
+    "reporting": [
+      "Maintain evidence of timely submissions to all CICs and produce during inspections.",
+      "Disclose CIC membership status and grievance channels on the NBFC website.",
+      "Report systemic errors or data breaches involving CIC information to RBI and impacted customers."
+    ],
+    "thresholds": [
+      "Membership in all four CICs (TransUnion CIBIL, Equifax, Experian, CRIF) is mandatory; data must be furnished at least monthly, and exposures \u2265\u20b95 crore reported to CRILC on a weekly basis.",
+      "Disputes raised by borrowers must be resolved within 30 days; failure attracts penalties up to \u20b91 lakh per day of delay.",
+      "Data files must meet \u226598% accuracy score in CIC validation; rejection beyond 2% must be rectified within 7 days."
+    ],
+    "deep_dive": "Data needs to include account status, collateral, days past due and restructuring flags. NBFCs must maintain secure API connections with CICs and restrict access through need-to-know controls plus quarterly user recertification. Negative reporting of guarantors is compulsory once guarantee is invoked, and closed accounts must be updated within 7 days of settlement.",
+    "rcsa": [
+        {"control": "CIC Data Furnishing", "risk": "Delay or failure to furnish data to all four CICs", "frequency": "Monthly"},
+        {"control": "Dispute Resolution TAT", "risk": "Failure to resolve borrower disputes within 30 days", "frequency": "Per Case"},
+        {"control": "Data Accuracy Monitoring", "risk": "Data accuracy falling below the 98% threshold", "frequency": "Monthly"},
+        {"control": "CRILC Reporting", "risk": "Failure to report large exposures to CRILC on a weekly basis", "frequency": "Weekly"}
+    ]
+  },
+  {
+    "id": "kyc",
+    "title": "NBFC \u2013 Know Your Customer",
+    "tags": [
+      "customer",
+      "compliance",
+      "aml"
+    ],
+    "function": "Adopts the RBI Master KYC Direction for NBFCs covering CDD, beneficial ownership, V-CIP and record retention.",
+    "actions": [
+      "Perform full CDD at onboarding, including identification of beneficial owners for juridical persons and verification of PAN/Aadhaar as applicable.",
+      "Use V-CIP or CKYCR only in line with RBI-prescribed safeguards, video recording quality and geo-tagging requirements.",
+      "Monitor transactions for suspicious patterns, file STRs/CTRs with FIU-IND and maintain KYC records for at least ten years after relationship ends.",
+      "Small accounts opened with simplified KYC capped at \u20b91 lakh aggregate credit in a year and \u20b950,000 balance at any time; transactions beyond these require full KYC."
+    ],
+    "other": [
+      "Risk-based periodic KYC update cycles must be defined (high, medium, low risk).",
+      "Non-face-to-face onboarding requires additional verification such as OTP-based e-KYC plus liveliness checks.",
+      "Customer due diligence obligations apply equally to walk-in customers of NBFC agents."
+    ],
+    "controls": [
+      "Adopt risk-based customer acceptance policies with enhanced due diligence for PEPs and high-risk sectors.",
+      "Ensure V-CIP journeys incorporate liveness detection, geo-tagging and video recording retention.",
+      "Periodic KYC refresh cycles triggered automatically with alerts to branches and BCs."
+    ],
+    "reporting": [
+      "File STRs/CTRs to FIU-IND through FINnet portal and maintain acknowledgement numbers.",
+      "Report significant KYC/AML breaches or regulatory penalties to the board and RBI promptly.",
+      "Maintain CKYCR upload evidence and respond to regulator queries on record-keeping within stipulated time."
+    ],
+    "thresholds": [
+      "Small accounts opened with simplified KYC capped at \u20b91 lakh aggregate credit in a year and \u20b950,000 balance at any time; transactions beyond these require full KYC.",
+      "Periodic KYC updates: every 2 years for high-risk, 8 years for medium-risk, 10 years for low-risk customers.",
+      "V-CIP sessions must have minimum 12 fps video quality, geo-tagging of customer location, and concurrent audit sampling of at least 10% of sessions."
+    ],
+    "deep_dive": "Beneficial ownership thresholds: 10% for companies and 15% for partnership/LLP. Aadhaar OTP-based e-KYC permitted only for bank-mandated categories; NBFCs must rely on CKYCR for central storage. Suspicious transactions (STRs) and Cash Transaction Reports (CTRs) must hit FIU-IND via FINnet within 7 working days of detection, and records must be kept for 10 years after exit.",
+    "rcsa": [
+        {"control": "Small Account Limit Monitoring", "risk": "Breach of small account limits", "frequency": "Ongoing"},
+        {"control": "Periodic KYC Updates", "risk": "Failure to conduct periodic KYC updates as per risk categorization", "frequency": "Ongoing"},
+        {"control": "V-CIP Quality and Audit", "risk": "Non-compliance with V-CIP quality and audit requirements", "frequency": "Ongoing"},
+        {"control": "STR/CTR Filing", "risk": "Delay in filing of STRs/CTRs with FIU-IND", "frequency": "Per Case"}
+    ]
+  },
+  {
+    "id": "credit-cards",
+    "title": "NBFC \u2013 Credit Cards: Issuance & Conduct",
+    "tags": [
+      "customer",
+      "lending",
+      "conduct"
+    ],
+    "function": "Extends the card issuance, billing, co-branding and recovery standards to NBFCs authorised to issue credit cards.",
+    "actions": [
+      "Obtain specific RBI approval before issuing cards, ensure underwriting is independent of sponsors and avoid unsolicited cards or upgrades.",
+      "Send statements with minimum 14 days for payment, avoid negative amortisation, and allow no-cost EMI only when merchant discount fully offsets interest.",
+      "Disclose all fees, interest reset clauses and conversion charges upfront; maintain 24x7 dispute redress and chargeback timelines.",
+      "Billing cycle must allow minimum 14-day grace period; finance charges cannot exceed those disclosed at origination and must be capped per board policy (industry median ~3.5% per month)."
+    ],
+    "other": [
+      "Co-branded arrangements require NBFC control over KYC, underwriting and collections.",
+      "Recovery agents must follow RBI's conduct rules and operate only between permitted hours.",
+      "Closure requests must be honoured within seven working days, failing which penalties apply."
+    ],
+    "controls": [
+      "Calibrate underwriting scorecards distinct from parent bank/NBFC lending rules and monitor vintage performance.",
+      "Run automated scripts to capture customer consent for add-on products, EMI conversions and third-party offers.",
+      "Implement chargeback governance with defined TATs, root-cause analysis and restitution policies."
+    ],
+    "reporting": [
+      "Provide RBI with portfolio-level data on sourcing channels, delinquencies, interest waivers and fee income.",
+      "Disclose co-branding partners, outsourcing arrangements and major incidents in the annual statement.",
+      "Offer customers downloadable statements, MITC (Most Important Terms & Conditions) and closure acknowledgements."
+    ],
+    "thresholds": [
+      "Billing cycle must allow minimum 14-day grace period; finance charges cannot exceed those disclosed at origination and must be capped per board policy (industry median ~3.5% per month).",
+      "Card closure requests must be honoured within 7 working days; failure entails \u20b9500 per day compensation.",
+      "Co-branded partnerships require the NBFC to hold at least 51% control over KYC, underwriting and collections."
+    ],
+    "deep_dive": "Explicit consent is required for increasing credit limits or converting purchases into EMI\u2014silence cannot be treated as consent. Chargebacks must be resolved within 30 days (120 days for cross-border). Any telemarketing/collection agency must confine calls between 8 a.m. and 7 p.m.; breach invites penalties and blacklisting. Card data storage must comply with PCI-DSS, and tokenisation is mandatory for online use.",
+    "rcsa": [
+        {"control": "Billing Cycle and Grace Period", "risk": "Failure to provide a minimum 14-day grace period", "frequency": "Monthly"},
+        {"control": "Card Closure TAT", "risk": "Failure to close cards within 7 working days", "frequency": "Per Case"},
+        {"control": "Co-branded Partnership Control", "risk": "Lack of 51% control in co-branded partnerships", "frequency": "Ongoing"},
+        {"control": "Explicit Consent for Limit Increase/EMI", "risk": "Failure to obtain explicit consent for limit increases or EMI conversions", "frequency": "Per Case"}
+    ]
+  },
+  {
+    "id": "responsible-conduct",
+    "title": "NBFC \u2013 Responsible Business Conduct",
+    "tags": [
+      "customer",
+      "conduct",
+      "governance"
+    ],
+    "function": "Consolidates fair lending, transparency, suitability and grievance redress norms for all customer interfaces.",
+    "actions": [
+      "Adopt an updated Fair Practices Code covering product design, marketing communication, staff incentives and treatment of vulnerable customers.",
+      "Publish key fact statements for every retail loan, capturing APR, fees, cooling-off rights and contact points.",
+      "Track complaint ageing, root cause and compensation metrics via board-level Service Quality Committees.",
+      "Key Fact Statements must be issued for all retail loans above \u20b95,000 with APR, fees and recovery timelines; customers receive a 3-day cooling-off period for digital loans."
+    ],
+    "other": [
+      "Digital lending partners must display NBFC identity and comply with consent artefact rules.",
+      "Field recovery staff must carry authorisation letters and audio-record visits when feasible.",
+      "NBFCs must participate in RBI's Integrated Ombudsman Scheme and display details prominently."
+    ],
+    "controls": [
+      "Embed Fair Practices Code elements into LOS/LMS so communications auto-populate key fact data.",
+      "Use speech analytics / mystery shopping to verify adherence to sales and recovery scripts.",
+      "Maintain vulnerability-sensitive policies for senior citizens, MSMEs and digitally excluded customers."
+    ],
+    "reporting": [
+      "Run Service Quality dashboards capturing TATs, complaint resolution and compensation numbers for the board.",
+      "Disclose grievance redress statistics, ombudsman awards and compensation paid annually.",
+      "Report serious conduct breaches to RBI within 15 days and document remedial coaching or disciplinary action."
+    ],
+    "thresholds": [
+      "Key Fact Statements must be issued for all retail loans above \u20b95,000 with APR, fees and recovery timelines; customers receive a 3-day cooling-off period for digital loans.",
+      "Complaints acknowledged within 48 hours and resolved within 30 days; unresolved cases automatically escalate to the Internal Ombudsman.",
+      "Field recovery visits require geo-tagging and audio recording when ticket size exceeds \u20b950,000."
+    ],
+    "deep_dive": "Fair Practices Codes must cover product suitability assessments, incentive alignment and prohibition of harassment. NBFCs must also participate in RBI\u2019s CMS (Complaint Management System) and integrate real-time feedback loops. Refunds for wrongful debits must occur within 7 days, and any systemic issue demands board-reviewed root cause analysis.",
+    "rcsa": [
+        {"control": "KFS Issuance", "risk": "Failure to issue KFS for all eligible loans", "frequency": "Per Loan"},
+        {"control": "Complaint Resolution TAT", "risk": "Failure to resolve complaints within 30 days", "frequency": "Per Case"},
+        {"control": "Field Recovery Visit Recording", "risk": "Failure to record field recovery visits for large ticket sizes", "frequency": "Per Visit"},
+        {"control": "Fair Practices Code Review", "risk": "Outdated or non-compliant Fair Practices Code", "frequency": "Annual"}
+    ]
+  },
+  {
+    "id": "amalgamation",
+    "title": "NBFC \u2013 Voluntary Amalgamation",
+    "tags": [
+      "governance",
+      "strategy",
+      "licensing"
+    ],
+    "function": "Sets the approval process and prudential filters for amalgamation or merger of two NBFCs.",
+    "actions": [
+      "Obtain RBI no-objection before filing any scheme with NCLT; application must include swap ratios, financials, and post-merger capital plan.",
+      "Ensure combined entity meets NOF, SBR layer capital and governance requirements on the effective date.",
+      "Communicate with customers and creditors about the merger and honour all contractual obligations seamlessly.",
+      "Two independent valuers must certify the share swap ratio; fairness opinion from SEBI-registered merchant banker compulsory for listed NBFCs."
+    ],
+    "other": [
+      "RBI may impose conditions such as branch rationalisation, promoter dilution or staggered integration.",
+      "All regulatory approvals from other sectoral regulators must be annexed before final sanction.",
+      "If merger results in change of control, the acquisition rules apply simultaneously."
+    ],
+    "controls": [
+      "Set up integration management offices covering credit, IT, HR and governance streams with RBI-observed milestones.",
+      "Track synergy assumptions versus actuals and escalate deviations to the board.",
+      "Ensure customer communications, account numbers and repayment instructions transition seamlessly."
+    ],
+    "reporting": [
+      "Submit periodic progress reports to RBI on merger integration, capital position and compliance with conditions.",
+      "File revised CoR, shareholding patterns and branch rationalisation plans post-merger.",
+      "Disclose scheme highlights, swap ratios and expected benefits to investors and customers."
+    ],
+    "thresholds": [
+      "Two independent valuers must certify the share swap ratio; fairness opinion from SEBI-registered merchant banker compulsory for listed NBFCs.",
+      "Combined entity must have CRAR \u226515%, Tier I \u226510% and NOF above the regulatory minimum on the appointed date.",
+      "All creditors and depositors must be given a 30-day public notice; objections to RBI/NCLT must be disclosed in the petition."
+    ],
+    "deep_dive": "Schemes require RBI \u2018no objection\u2019 before filing with NCLT. Integration plans must cover IT migration, HR harmonisation and risk management conversions with timelines; RBI can impose conditions like promoter dilution or branch rationalisation. Post-merger, fresh certificates of registration and new CoR numbers are issued, and all agreements with lenders must be re-signed.",
+    "rcsa": [
+        {"control": "Independent Valuation", "risk": "Failure to obtain two independent valuations for the share swap ratio", "frequency": "Per Transaction"},
+        {"control": "Post-Merger Prudential Norms", "risk": "Failure to meet post-merger prudential norms", "frequency": "Per Transaction"},
+        {"control": "Public Notice to Creditors", "risk": "Failure to provide 30-day public notice to creditors", "frequency": "Per Transaction"},
+        {"control": "RBI No-Objection", "risk": "Failure to obtain RBI no-objection before filing with NCLT", "frequency": "Per Transaction"}
+    ]
+  },
+  {
+    "id": "miscellaneous",
+    "title": "NBFC \u2013 Miscellaneous",
+    "tags": [
+      "compliance",
+      "legal",
+      "reporting"
+    ],
+    "function": "Captures residual instructions such as prohibitions on offering demand deposits, guidelines on gifts/incentives, audit requirements and supervisory powers.",
+    "actions": [
+      "Do not issue bearer instruments, virtual accounts without KYC or any deposit-like product not expressly permitted.",
+      "Maintain statutory auditors' independence, rotate partners as per RBI timelines and submit fraud monitoring returns promptly.",
+      "Respond to RBI inspection findings within mandated timelines and implement corrective action tracking.",
+      "Section 45IC requires transfer of at least 20% of net profit to the statutory reserve every year until it equals the paid-up capital."
+    ],
+    "other": [
+      "Monetary penalties for each contravention can extend up to INR 1 crore plus continuing penalties.",
+      "RBI may exempt specific provisions or extend compliance dates in public interest but expects detailed justification.",
+      "Directions supplement, and where necessary override, sectoral laws like Factoring Regulation Act or NHB Act."
+    ],
+    "controls": [
+      "Maintain a living compliance inventory listing every circular, master direction and due date mapped to owners.",
+      "Conduct quarterly self-assessments on prohibited activities (demand deposits, trading) and document evidence.",
+      "Implement whistle-blower and fraud monitoring frameworks aligned with RBI instructions."
+    ],
+    "reporting": [
+      "File fraud monitoring returns (FMR) and submission on cyber incidents as required.",
+      "Respond to supervisory letters with action-taken reports and evidence closures within agreed timelines.",
+      "Disclose penalties, show-cause notices and remediation plans in annual reports when mandated."
+    ],
+    "thresholds": [
+      "Section 45IC requires transfer of at least 20% of net profit to the statutory reserve every year until it equals the paid-up capital.",
+      "Penalties for contravention under RBI Act can go up to \u20b91 crore plus \u20b91 lakh per day for continuing offences.",
+      "Any gift or incentive scheme for loan sourcing must cap individual payouts at \u20b95,000 per customer to avoid inducement breaches."
+    ],
+    "deep_dive": "The catch-all direction covers prohibition on offering demand deposits, guidance on rounding off transactions, restrictions on use of the word \u2018bank\u2019, and instructions on reporting frauds via the FMR platform. It also spells out legal-entity identifier adoption timelines, disaster-recovery expectations and dispensation procedures for temporary hardship. Compliance officers must maintain a living inventory of all circulars with owner names and due dates.",
+    "rcsa": [
+        {"control": "Statutory Reserve Transfer", "risk": "Failure to transfer 20% of net profit to the statutory reserve", "frequency": "Annual"},
+        {"control": "Prohibited Activities Check", "risk": "Engaging in prohibited activities like offering demand deposits", "frequency": "Ongoing"},
+        {"control": "Fraud Reporting", "risk": "Delay or failure to report frauds via the FMR platform", "frequency": "Per Event"},
+        {"control": "Compliance Inventory Maintenance", "risk": "Incomplete or outdated compliance inventory", "frequency": "Ongoing"}
+    ]
+  }
+]
