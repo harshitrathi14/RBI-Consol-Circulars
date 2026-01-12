@@ -8,7 +8,6 @@ import {
     Animated,
     Dimensions,
 } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { COLORS, SIZES, SHADOWS } from '../constants/theme';
 
 const { width } = Dimensions.get('window');
