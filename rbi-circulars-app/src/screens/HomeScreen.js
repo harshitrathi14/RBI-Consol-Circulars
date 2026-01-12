@@ -69,8 +69,9 @@ const HomeScreen = ({ navigation }) => {
             {/* Header */}
             <View style={styles.header}>
                 <View>
-                    <Text style={styles.headerSubtitle}>RBI Master Circulars</Text>
-                    <Text style={styles.headerTitle}>NBFC Regulations</Text>
+                    <Text style={styles.headerSubtitle}>AI Apps by Harshit Rathi</Text>
+                    <Text style={styles.headerTitle}>Consolidated Master Circulars</Text>
+                    <Text style={styles.headerTag}>NBFCs</Text>
                 </View>
                 <TouchableOpacity
                     style={styles.searchButton}
@@ -204,8 +205,14 @@ const styles = StyleSheet.create({
     },
     headerTitle: {
         color: COLORS.textOnPrimary,
-        fontSize: SIZES.xxl,
+        fontSize: SIZES.xl,
         fontWeight: '700',
+    },
+    headerTag: {
+        color: COLORS.accentLight,
+        fontSize: SIZES.md,
+        fontWeight: '600',
+        marginTop: 2,
     },
     searchButton: {
         backgroundColor: 'rgba(255,255,255,0.15)',

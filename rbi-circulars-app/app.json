@@ -1,7 +1,7 @@
 {
     "expo": {
-        "name": "RBI Circulars",
-        "slug": "rbi-circulars-app",
+        "name": "Consolidated Master Circulars: NBFCs",
+        "slug": "master-comsol-circulars",
         "version": "1.0.0",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
@@ -16,7 +16,13 @@
         ],
         "ios": {
             "supportsTablet": true,
-            "bundleIdentifier": "com.rbicirculars.app"
+            "bundleIdentifier": "com.harshitrathi.consolidatedcirculars",
+            "buildNumber": "1.0.0",
+            "infoPlist": {
+                "NSPhotoLibraryUsageDescription": "Allow access to save exported files",
+                "UIFileSharingEnabled": true,
+                "LSSupportsOpeningDocumentsInPlace": true
+            }
         },
         "android": {
             "adaptiveIcon": {

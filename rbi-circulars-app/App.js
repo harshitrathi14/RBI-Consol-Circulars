@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -10,6 +10,10 @@ import LibraryScreen from './src/screens/LibraryScreen';
 import SearchScreen from './src/screens/SearchScreen';
 import SectionDetailScreen from './src/screens/SectionDetailScreen';
 import CircularsScreen from './src/screens/CircularsScreen';
+import ExportScreen from './src/screens/ExportScreen';
+
+// Components
+import WelcomePopup from './src/components/WelcomePopup';
 
 // Theme
 import { COLORS, SIZES } from './src/constants/theme';
@@ -71,12 +75,23 @@ function MainTabs() {
                     ),
                 }}
             />
+            <Tab.Screen
+                name="Export"
+                component={ExportScreen}
+                options={{
+                    tabBarIcon: ({ focused }) => (
+                        <TabIcon icon="📥" label="Export" focused={focused} />
+                    ),
+                }}
+            />
         </Tab.Navigator>
     );
 }
 
 // Main App with Stack Navigator
 export default function App() {
+    const [showWelcome, setShowWelcome] = useState(true);
+
     return (
         <NavigationContainer>
             <StatusBar barStyle="light-content" backgroundColor={COLORS.primary} />
@@ -89,6 +104,7 @@ export default function App() {
                 <Stack.Screen name="MainTabs" component={MainTabs} />
                 <Stack.Screen name="SectionDetail" component={SectionDetailScreen} />
             </Stack.Navigator>
+            {showWelcome && <WelcomePopup onClose={() => setShowWelcome(false)} />}
         </NavigationContainer>
     );
 }

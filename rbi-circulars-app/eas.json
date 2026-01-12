@@ -5,17 +5,35 @@
     "build": {
         "development": {
             "developmentClient": true,
-            "distribution": "internal"
+            "distribution": "internal",
+            "ios": {
+                "simulator": true
+            }
         },
         "preview": {
             "distribution": "internal",
             "android": {
                 "buildType": "apk"
+            },
+            "ios": {
+                "simulator": true
+            }
+        },
+        "preview-device": {
+            "distribution": "internal",
+            "android": {
+                "buildType": "apk"
+            },
+            "ios": {
+                "distribution": "internal"
             }
         },
         "production": {
             "android": {
                 "buildType": "app-bundle"
+            },
+            "ios": {
+                "distribution": "store"
             }
         }
     },
