@@ -9,16 +9,44 @@ import {
     StatusBar,
     Alert,
     Platform,
-    Linking,
     Modal,
     ActivityIndicator,
 } from 'react-native';
+import * as FileSystem from 'expo-file-system';
+import * as Sharing from 'expo-sharing';
+import * as IntentLauncher from 'expo-intent-launcher';
+import { Asset } from 'expo-asset';
 import { COLORS, SIZES, SHADOWS } from '../constants/theme';
 import pdfCirculars from '../data/pdfCirculars.json';
 
-// Base URL for PDFs - for production, host these on a server
-// For now, we'll use local file references
-const PDF_BASE_PATH = '../../'; // Relative path to PDFs from app root
+// PDF asset mapping - maps filenames to require statements
+const pdfAssets = {
+    '339MD7166A79E96D64572B378949D3972DBD1.pdf': require('../../assets/pdfs/339MD7166A79E96D64572B378949D3972DBD1.pdf'),
+    '340MD4B77ED4B942E4F9FBECA5673D0360BA3.pdf': require('../../assets/pdfs/340MD4B77ED4B942E4F9FBECA5673D0360BA3.pdf'),
+    '341MDDF7F3A9C8BF2439D828E773D444D7FD3.pdf': require('../../assets/pdfs/341MDDF7F3A9C8BF2439D828E773D444D7FD3.pdf'),
+    '342MD6D0E541E684A451BB4BB80C4819B2BB1.pdf': require('../../assets/pdfs/342MD6D0E541E684A451BB4BB80C4819B2BB1.pdf'),
+    '343MD54448C9FA65A429BB5AFADBB162904F1.pdf': require('../../assets/pdfs/343MD54448C9FA65A429BB5AFADBB162904F1.pdf'),
+    '344MD22F0E87F6DD848919A6459236939D76F.pdf': require('../../assets/pdfs/344MD22F0E87F6DD848919A6459236939D76F.pdf'),
+    '345MDAB71EF5B2D534D7B92C654742BDF9A77.pdf': require('../../assets/pdfs/345MDAB71EF5B2D534D7B92C654742BDF9A77.pdf'),
+    '346MD6C1FC3FFE3E84415B12A1C05642FD3E3.pdf': require('../../assets/pdfs/346MD6C1FC3FFE3E84415B12A1C05642FD3E3.pdf'),
+    '347MD5CC21D3597C04354B67A42A1A4CB439C.pdf': require('../../assets/pdfs/347MD5CC21D3597C04354B67A42A1A4CB439C.pdf'),
+    '349MD04B1F5EC16D84779BC61D9CC40552401.pdf': require('../../assets/pdfs/349MD04B1F5EC16D84779BC61D9CC40552401.pdf'),
+    '350MDEF81E70DAB50429898EB2CF07BBCA09E.pdf': require('../../assets/pdfs/350MDEF81E70DAB50429898EB2CF07BBCA09E.pdf'),
+    '351MD74108723E6DA484E954DB9D2C7ED184C.pdf': require('../../assets/pdfs/351MD74108723E6DA484E954DB9D2C7ED184C.pdf'),
+    '352MDCF4E55B0ACD24FCC8AED1C715997F0F9.pdf': require('../../assets/pdfs/352MDCF4E55B0ACD24FCC8AED1C715997F0F9.pdf'),
+    '353MD9A35481FC07E4D1199A62E5C2356B0C4.pdf': require('../../assets/pdfs/353MD9A35481FC07E4D1199A62E5C2356B0C4.pdf'),
+    '354MD1F909E42C44E481085D47ECF16A9EE26.pdf': require('../../assets/pdfs/354MD1F909E42C44E481085D47ECF16A9EE26.pdf'),
+    '355MDDFD8E87964DD4F529248131781B5812F.pdf': require('../../assets/pdfs/355MDDFD8E87964DD4F529248131781B5812F.pdf'),
+    '356MD4F8109CA54BE44A9805C5300601F8A11.pdf': require('../../assets/pdfs/356MD4F8109CA54BE44A9805C5300601F8A11.pdf'),
+    '357MD501BDDC9758E40B592D1AD2D919CC6AF.pdf': require('../../assets/pdfs/357MD501BDDC9758E40B592D1AD2D919CC6AF.pdf'),
+    '358MDB0FF0CDD07C04BFAB5A97494E9BB7104.pdf': require('../../assets/pdfs/358MDB0FF0CDD07C04BFAB5A97494E9BB7104.pdf'),
+    '360MD1E07039E1DCA455B8CCB9D0C4BFD4BBE.pdf': require('../../assets/pdfs/360MD1E07039E1DCA455B8CCB9D0C4BFD4BBE.pdf'),
+    '361MD1E2F8EA063454AD5AFA1D02A1BA5ACA7.pdf': require('../../assets/pdfs/361MD1E2F8EA063454AD5AFA1D02A1BA5ACA7.pdf'),
+    '362MD26CA543937BA439A97E1BCFC08CF5808.pdf': require('../../assets/pdfs/362MD26CA543937BA439A97E1BCFC08CF5808.pdf'),
+    '368MDA3A72C813679452CB0A291E6B300DB59.pdf': require('../../assets/pdfs/368MDA3A72C813679452CB0A291E6B300DB59.pdf'),
+    '371MD93444E1CFB2749C6A9F8F0182794522B.pdf': require('../../assets/pdfs/371MD93444E1CFB2749C6A9F8F0182794522B.pdf'),
+    '373MD7F3656C99F764E2F9CE1BC4A1337861F.pdf': require('../../assets/pdfs/373MD7F3656C99F764E2F9CE1BC4A1337861F.pdf'),
+};
 
 const CircularsScreen = ({ navigation }) => {
     const [circulars, setCirculars] = useState([]);
@@ -29,7 +57,6 @@ const CircularsScreen = ({ navigation }) => {
 
     useEffect(() => {
         setCirculars(pdfCirculars);
-        // Extract unique categories
         const cats = ['all', ...new Set(pdfCirculars.map(c => c.category))];
         setCategories(cats);
     }, []);
@@ -38,51 +65,89 @@ const CircularsScreen = ({ navigation }) => {
         ? circulars
         : circulars.filter(c => c.category === selectedCategory);
 
+    // Get the local file path for a PDF
+    const getPdfLocalPath = async (filename) => {
+        const asset = pdfAssets[filename];
+        if (!asset) {
+            throw new Error('PDF not found in assets');
+        }
+
+        // Load the asset
+        const [loadedAsset] = await Asset.loadAsync(asset);
+
+        // Copy to document directory for sharing/opening
+        const localUri = `${FileSystem.documentDirectory}${filename}`;
+
+        // Check if already copied
+        const fileInfo = await FileSystem.getInfoAsync(localUri);
+        if (!fileInfo.exists) {
+            await FileSystem.copyAsync({
+                from: loadedAsset.localUri || loadedAsset.uri,
+                to: localUri,
+            });
+        }
+
+        return localUri;
+    };
+
     const handleViewPdf = async (circular) => {
         setLoading(true);
+        setSelectedPdf(null);
 
         try {
-            if (Platform.OS === 'web') {
-                // For web, try to open the PDF in a new tab
-                // In production, this would be a hosted URL
-                const pdfUrl = `/${circular.filename}`;
-                window.open(pdfUrl, '_blank');
+            const localUri = await getPdfLocalPath(circular.filename);
+
+            if (Platform.OS === 'android') {
+                // On Android, use IntentLauncher to open with PDF viewer
+                const contentUri = await FileSystem.getContentUriAsync(localUri);
+                await IntentLauncher.startActivityAsync('android.intent.action.VIEW', {
+                    data: contentUri,
+                    flags: 1, // FLAG_GRANT_READ_URI_PERMISSION
+                    type: 'application/pdf',
+                });
+            } else if (Platform.OS === 'ios') {
+                // On iOS, use sharing which opens the share sheet with PDF preview
+                await Sharing.shareAsync(localUri, {
+                    mimeType: 'application/pdf',
+                    dialogTitle: circular.title,
+                    UTI: 'com.adobe.pdf',
+                });
             } else {
-                // For mobile, we'll show options
-                setSelectedPdf(circular);
+                // Web fallback
+                window.open(localUri, '_blank');
             }
         } catch (error) {
-            Alert.alert('Error', 'Unable to open PDF. Please try downloading instead.');
+            console.error('Error opening PDF:', error);
+            Alert.alert(
+                'Error',
+                'Unable to open PDF. Please make sure you have a PDF viewer installed.',
+                [{ text: 'OK' }]
+            );
         } finally {
             setLoading(false);
         }
     };
 
-    const handleDownload = async (circular) => {
-        if (Platform.OS === 'web') {
-            // For web, trigger download
-            const link = document.createElement('a');
-            link.href = `/${circular.filename}`;
-            link.download = circular.filename;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        } else {
-            // For mobile, show info about download
-            Alert.alert(
-                'Download PDF',
-                `To download "${circular.title}", the PDF will be saved to your device's downloads folder.`,
-                [
-                    { text: 'Cancel', style: 'cancel' },
-                    {
-                        text: 'Download',
-                        onPress: () => {
-                            // In production, implement with expo-file-system
-                            Alert.alert('Coming Soon', 'Download functionality will be available in the next update.');
-                        }
-                    }
-                ]
-            );
+    const handleShare = async (circular) => {
+        setLoading(true);
+        setSelectedPdf(null);
+
+        try {
+            const localUri = await getPdfLocalPath(circular.filename);
+
+            if (await Sharing.isAvailableAsync()) {
+                await Sharing.shareAsync(localUri, {
+                    mimeType: 'application/pdf',
+                    dialogTitle: `Share ${circular.title}`,
+                });
+            } else {
+                Alert.alert('Sharing not available', 'Sharing is not available on this device.');
+            }
+        } catch (error) {
+            console.error('Error sharing PDF:', error);
+            Alert.alert('Error', 'Unable to share PDF.');
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -101,6 +166,11 @@ const CircularsScreen = ({ navigation }) => {
             'Fintech': '#8B5CF6',
             'Microfinance': '#22C55E',
             'Infrastructure': '#64748B',
+            'Transactions': '#A855F7',
+            'Investment': '#0EA5E9',
+            'Resolution': '#DC2626',
+            'Enforcement': '#B91C1C',
+            'Reporting': '#059669',
         };
         return colors[category] || COLORS.primary;
     };
@@ -140,14 +210,18 @@ const CircularsScreen = ({ navigation }) => {
                 <TouchableOpacity
                     style={[styles.actionButton, styles.viewButton]}
                     onPress={() => handleViewPdf(item)}
+                    disabled={loading}
                 >
-                    <Text style={styles.viewButtonText}>View PDF</Text>
+                    <Text style={styles.viewButtonText}>
+                        {loading ? 'Opening...' : 'View PDF'}
+                    </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={[styles.actionButton, styles.downloadButton]}
-                    onPress={() => handleDownload(item)}
+                    style={[styles.actionButton, styles.shareButton]}
+                    onPress={() => handleShare(item)}
+                    disabled={loading}
                 >
-                    <Text style={styles.downloadButtonText}>Download</Text>
+                    <Text style={styles.shareButtonText}>Share</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -161,7 +235,7 @@ const CircularsScreen = ({ navigation }) => {
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>Master Circulars</Text>
                 <Text style={styles.headerSubtitle}>
-                    {filteredCirculars.length} circular{filteredCirculars.length !== 1 ? 's' : ''} available
+                    {filteredCirculars.length} circular{filteredCirculars.length !== 1 ? 's' : ''} • PDFs included offline
                 </Text>
             </View>
 
@@ -191,86 +265,13 @@ const CircularsScreen = ({ navigation }) => {
                 }
             />
 
-            {/* PDF Options Modal (for mobile) */}
-            <Modal
-                visible={selectedPdf !== null}
-                transparent
-                animationType="slide"
-                onRequestClose={() => setSelectedPdf(null)}
-            >
-                <View style={styles.modalOverlay}>
-                    <View style={styles.modalContent}>
-                        <Text style={styles.modalTitle}>
-                            {selectedPdf?.shortTitle || 'PDF Options'}
-                        </Text>
-                        <Text style={styles.modalSubtitle}>
-                            {selectedPdf?.title}
-                        </Text>
-
-                        <TouchableOpacity
-                            style={styles.modalOption}
-                            onPress={() => {
-                                setSelectedPdf(null);
-                                Alert.alert(
-                                    'Open in Browser',
-                                    'PDF viewing will open in your default PDF viewer.',
-                                    [{ text: 'OK' }]
-                                );
-                            }}
-                        >
-                            <Text style={styles.modalOptionIcon}>🌐</Text>
-                            <View style={styles.modalOptionText}>
-                                <Text style={styles.modalOptionTitle}>Open in Browser</Text>
-                                <Text style={styles.modalOptionDesc}>View PDF in external browser</Text>
-                            </View>
-                        </TouchableOpacity>
-
-                        <TouchableOpacity
-                            style={styles.modalOption}
-                            onPress={() => {
-                                setSelectedPdf(null);
-                                handleDownload(selectedPdf);
-                            }}
-                        >
-                            <Text style={styles.modalOptionIcon}>📥</Text>
-                            <View style={styles.modalOptionText}>
-                                <Text style={styles.modalOptionTitle}>Download PDF</Text>
-                                <Text style={styles.modalOptionDesc}>Save to device storage</Text>
-                            </View>
-                        </TouchableOpacity>
-
-                        <TouchableOpacity
-                            style={styles.modalOption}
-                            onPress={() => {
-                                setSelectedPdf(null);
-                                Alert.alert(
-                                    'Share',
-                                    'Sharing functionality will be available soon.',
-                                    [{ text: 'OK' }]
-                                );
-                            }}
-                        >
-                            <Text style={styles.modalOptionIcon}>📤</Text>
-                            <View style={styles.modalOptionText}>
-                                <Text style={styles.modalOptionTitle}>Share</Text>
-                                <Text style={styles.modalOptionDesc}>Share via email or messaging</Text>
-                            </View>
-                        </TouchableOpacity>
-
-                        <TouchableOpacity
-                            style={styles.modalClose}
-                            onPress={() => setSelectedPdf(null)}
-                        >
-                            <Text style={styles.modalCloseText}>Cancel</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-            </Modal>
-
             {/* Loading Overlay */}
             {loading && (
                 <View style={styles.loadingOverlay}>
-                    <ActivityIndicator size="large" color={COLORS.primary} />
+                    <View style={styles.loadingBox}>
+                        <ActivityIndicator size="large" color={COLORS.primary} />
+                        <Text style={styles.loadingText}>Opening PDF...</Text>
+                    </View>
                 </View>
             )}
         </SafeAreaView>
@@ -384,12 +385,12 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         fontSize: SIZES.md,
     },
-    downloadButton: {
+    shareButton: {
         backgroundColor: COLORS.surfaceAlt,
         borderWidth: 1,
         borderColor: COLORS.border,
     },
-    downloadButtonText: {
+    shareButtonText: {
         color: COLORS.text,
         fontWeight: '600',
         fontSize: SIZES.md,
@@ -402,69 +403,22 @@ const styles = StyleSheet.create({
         fontSize: SIZES.base,
         color: COLORS.textSecondary,
     },
-    modalOverlay: {
-        flex: 1,
-        backgroundColor: 'rgba(0,0,0,0.5)',
-        justifyContent: 'flex-end',
-    },
-    modalContent: {
-        backgroundColor: COLORS.surface,
-        borderTopLeftRadius: SIZES.radius.xl,
-        borderTopRightRadius: SIZES.radius.xl,
-        padding: SIZES.spacing.lg,
-        paddingBottom: SIZES.spacing.xxl,
-    },
-    modalTitle: {
-        fontSize: SIZES.lg,
-        fontWeight: '700',
-        color: COLORS.text,
-        marginBottom: SIZES.spacing.xs,
-    },
-    modalSubtitle: {
-        fontSize: SIZES.md,
-        color: COLORS.textSecondary,
-        marginBottom: SIZES.spacing.lg,
-    },
-    modalOption: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        paddingVertical: SIZES.spacing.md,
-        borderBottomWidth: 1,
-        borderBottomColor: COLORS.borderLight,
-    },
-    modalOptionIcon: {
-        fontSize: 24,
-        marginRight: SIZES.spacing.md,
-    },
-    modalOptionText: {
-        flex: 1,
-    },
-    modalOptionTitle: {
-        fontSize: SIZES.base,
-        fontWeight: '600',
-        color: COLORS.text,
-    },
-    modalOptionDesc: {
-        fontSize: SIZES.sm,
-        color: COLORS.textSecondary,
-    },
-    modalClose: {
-        marginTop: SIZES.spacing.lg,
-        paddingVertical: SIZES.spacing.md,
-        alignItems: 'center',
-        backgroundColor: COLORS.surfaceAlt,
-        borderRadius: SIZES.radius.md,
-    },
-    modalCloseText: {
-        fontSize: SIZES.base,
-        fontWeight: '600',
-        color: COLORS.textSecondary,
-    },
     loadingOverlay: {
         ...StyleSheet.absoluteFillObject,
-        backgroundColor: 'rgba(255,255,255,0.8)',
+        backgroundColor: 'rgba(0,0,0,0.5)',
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    loadingBox: {
+        backgroundColor: COLORS.surface,
+        padding: SIZES.spacing.xl,
+        borderRadius: SIZES.radius.md,
+        alignItems: 'center',
+    },
+    loadingText: {
+        marginTop: SIZES.spacing.md,
+        fontSize: SIZES.base,
+        color: COLORS.text,
     },
 });
 
