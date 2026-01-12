@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+vector_store/
+.claude/
+node_modules/
+.expo/
+*.log
